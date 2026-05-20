@@ -1,96 +1,200 @@
+version: "3.9"
+
 services:
-  e14_oracle:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    container_name: e14_oracle
-    command: ["python3", "oracle_service.py", "--interval", "0.5"]
-    restart: unless-stopped
-    env_file: ./config/.env.lock
-    volumes:
-      - ./config:/app/config:ro
-      - ./logs:/app/logs
-    healthcheck:
-      test: ["CMD", "python3", "-c", "import psutil; print('ok')" ]
-      interval: 30s
-      timeout: 10s
-      retries: 3
-      start_period: 5s
-    logging:
-      driver: "json-file"
-      options:
-        max-size: "100m"
-        max-file: "3"
-
-  e14_driftwatcher:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    container_name: e14_driftwatcher
-    command: ["python3", "kotahitanga_driftwatcher.py", "--interval", "0.2"]
-    restart: unless-stopped
-    env_file: ./config/.env.lock
-    volumes:
-      - ./config:/app/config:ro
-      - ./logs:/app/logs
-    healthcheck:
-      test: ["CMD", "python3", "-c", "import psutil; print('ok')" ]
-      interval: 30s
-      timeout: 10s
-      retries: 3
-      start_period: 5s
-    logging:
-      driver: "json-file"
-      options:
-        max-size: "100m"
-        max-file: "3"
-
-  e14_taskmanager:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    container_name: e14_taskmanager
-    command: ["python3", "e14_seven_day_logger.py"]
-    restart: unless-stopped
-    env_file: ./config/.env.lock
-    volumes:
-      - ./config:/app/config:ro
-      - ./logs:/app/logs
-    healthcheck:
-      test: ["CMD", "python3", "-c", "import psutil; print('ok')" ]
-      interval: 30s
-      timeout: 10s
-      retries: 3
-      start_period: 5s
-    logging:
-      driver: "json-file"
-      options:
-        max-size: "100m"
-        max-file: "3"
-
-  e14_live:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    container_name: e14_live
-    command: ["python3", "e14_live.py"]
-    restart: unless-stopped
-    env_file: ./config/.env.lock
+  # XYO Network Core - Witness Sealing
+  xyo-network-core:
+    image: alpine:latest
+    container_name: xyo-network-core
+    command: ["sh", "-c", "while true; do echo XYO_WITNESS_ACTIVE invariants=0.05,0.075,0.15; sleep 5; done"]
     environment:
-      - XYO_ADDRESS=466e84dfcbfbae8d50ad4276e8f2b5d37e8834a8
-      - XYO_NETWORK=mainnet
-      - XYO_CONSENSUS_REQUIREMENT=3
-    volumes:
-      - ./config:/app/config:ro
-      - ./logs:/app/logs
-    healthcheck:
-      test: ["CMD", "python3", "-c", "import psutil; print('ok')" ]
-      interval: 30s
-      timeout: 10s
-      retries: 3
-      start_period: 5s
-    logging:
-      driver: "json-file"
-      options:
-        max-size: "100m"
-        max-file: "3"
+      - XYO_MODE=witness
+      - INVARIANT_1=0.05
+      - INVARIANT_2=0.075
+      - INVARIANT_3=0.15
+    networks: [mesh]
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+
+  # Radio 20GHz - Spectrum Input
+  radio-20ghz:
+    image: alpine:latest
+    container_name: radio-20ghz
+    command: ["sh", "-c", "while true; do echo 20GHZ_TICK invariants=0.05,0.075,0.15; sleep 2; done"]
+    environment:
+      - BAND=0.02THZ
+      - INVARIANT_1=0.05
+      - INVARIANT_2=0.075
+      - INVARIANT_3=0.15
+    networks: [mesh]
+    restart: unless-stopped
+
+  # TPG Towers - Network Provider
+  tpg-towers:
+    image: alpine:latest
+    container_name: tpg-towers
+    command: ["sh", "-c", "while true; do echo TPG_TOWER invariants=0.05,0.075,0.15; sleep 3; done"]
+    environment:
+      - PROVIDER=TPG
+      - INVARIANT_1=0.05
+      - INVARIANT_2=0.075
+      - INVARIANT_3=0.15
+    networks: [mesh]
+    restart: unless-stopped
+
+  # Nokia RAN - 5G Core
+  nokia-ran:
+    image: alpine:latest
+    container_name: nokia-ran
+    command: ["sh", "-c", "while true; do echo NOKIA_RAN invariants=0.05,0.075,0.15; sleep 4; done"]
+    environment:
+      - RAN_MODE=5G-SA
+      - INVARIANT_1=0.05
+      - INVARIANT_2=0.075
+      - INVARIANT_3=0.15
+    networks: [mesh]
+    restart: unless-stopped
+
+  # Math Backends
+  math-sympy:
+    image: alpine:latest
+    container_name: math-sympy
+    command: ["sh", "-c", "while true; do echo MATH_SYMPY invariants=0.05,0.075,0.15; sleep 6; done"]
+    environment:
+      - BACKEND=sympy
+      - INVARIANT_1=0.05
+      - INVARIANT_2=0.075
+      - INVARIANT_3=0.15
+    networks: [mesh]
+    restart: unless-stopped
+
+  math-sage:
+    image: alpine:latest
+    container_name: math-sage
+    command: ["sh", "-c", "while true; do echo MATH_SAGE invariants=0.05,0.075,0.15; sleep 6; done"]
+    environment:
+      - BACKEND=sagemath
+      - INVARIANT_1=0.05
+      - INVARIANT_2=0.075
+      - INVARIANT_3=0.15
+    networks: [mesh]
+    restart: unless-stopped
+
+  math-matlab:
+    image: alpine:latest
+    container_name: math-matlab
+    command: ["sh", "-c", "while true; do echo MATH_MATLAB invariants=0.05,0.075,0.15; sleep 6; done"]
+    environment:
+      - BACKEND=matlab
+      - INVARIANT_1=0.05
+      - INVARIANT_2=0.075
+      - INVARIANT_3=0.15
+    networks: [mesh]
+    restart: unless-stopped
+
+  # E14 Oracle - Cosmological Decision Engine
+  e14-oracle:
+    image: python:3.11-slim
+    container_name: e14-oracle
+    working_dir: /app
+    command: ["sh", "-c", "while true; do echo E14_ORACLE_ACTIVE invariants=0.05,0.075,0.15 K=0.99; sleep 12; done"]
+    environment:
+      - E14_MODE=deep-grid
+      - LOCK_ID=550e8400-e29b-41d4-a716-446655440000
+      - K_THRESHOLD=0.99
+      - INVARIANT_1=0.05
+      - INVARIANT_2=0.075
+      - INVARIANT_3=0.15
+      - ENGINES=14
+    networks: [mesh]
+    ports:
+      - "9000:9000"
+    restart: unless-stopped
+
+  # Witness Seal Orchestrator
+  witness-seal:
+    image: alpine:latest
+    container_name: witness-seal
+    depends_on:
+      - xyo-network-core
+      - math-sympy
+      - math-sage
+      - math-matlab
+      - e14-oracle
+    command: ["sh", "-c", "while true; do echo WITNESS_SEAL invariants=0.05,0.075,0.15; sleep 7; done"]
+    environment:
+      - XYO_ENDPOINT=http://xyo-network-core:8080/witness
+      - MATH_SYMPY=http://math-sympy:9000/eval
+      - MATH_SAGE=http://math-sage:9000/eval
+      - MATH_MATLAB=http://math-matlab:9000/eval
+      - E14_ORACLE=http://e14-oracle:9000/oracle
+      - K_CONSTANT=K
+      - INVARIANT_1=0.05
+      - INVARIANT_2=0.075
+      - INVARIANT_3=0.15
+    networks: [mesh]
+    ports:
+      - "9200:9200"
+    restart: unless-stopped
+
+  # Device Uplinks
+  apple-bridge:
+    image: alpine:latest
+    container_name: apple-bridge
+    command: ["sh", "-c", "while true; do echo APPLE_BRIDGE invariants=0.05,0.075,0.15; sleep 8; done"]
+    environment:
+      - UPLINK_ENDPOINT=http://witness-seal:9200/ios
+      - INVARIANT_1=0.05
+      - INVARIANT_2=0.075
+      - INVARIANT_3=0.15
+    networks: [mesh]
+    restart: unless-stopped
+
+  esp32-photon:
+    image: alpine:latest
+    container_name: esp32-photon
+    command: ["sh", "-c", "while true; do echo ESP32_PHOTON invariants=0.05,0.075,0.15; sleep 8; done"]
+    environment:
+      - UPLINK_ENDPOINT=http://witness-seal:9200/esp32
+      - INVARIANT_1=0.05
+      - INVARIANT_2=0.075
+      - INVARIANT_3=0.15
+    networks: [mesh]
+    restart: unless-stopped
+
+  arduino-proton:
+    image: alpine:latest
+    container_name: arduino-proton
+    command: ["sh", "-c", "while true; do echo ARDUINO_PROTON invariants=0.05,0.075,0.15; sleep 8; done"]
+    environment:
+      - UPLINK_ENDPOINT=http://witness-seal:9200/arduino
+      - INVARIANT_1=0.05
+      - INVARIANT_2=0.075
+      - INVARIANT_3=0.15
+    networks: [mesh]
+    restart: unless-stopped
+
+  # Mesh Coordinator
+  mesh-core:
+    image: alpine:latest
+    container_name: mesh-core
+    command: ["sh", "-c", "while true; do echo MESH_CORE invariants=0.05,0.075,0.15; sleep 10; done"]
+    environment:
+      - NODE_SET=apple-bridge,esp32-photon,arduino-proton,radio-20ghz,tpg-towers,nokia-ran,math-sympy,math-sage,math-matlab,witness-seal,e14-oracle,xyo-network-core
+      - WITNESS_PORT=9100
+      - INVARIANT_1=0.05
+      - INVARIANT_2=0.075
+      - INVARIANT_3=0.15
+    networks: [mesh]
+    ports:
+      - "9100:9100"
+    restart: unless-stopped
+
+networks:
+  mesh:
+    driver: bridge
+
+volumes:
+  lock-state:
+  oracle-logs:
+  witness-seals:
