@@ -1,5 +1,5 @@
-﻿param(
-    [string]
+param(
+    [string]$Layer
 )
 
 function Show-Menu {
@@ -14,12 +14,12 @@ function Show-Menu {
     Write-Host 'Q) Quit'
 }
 
-if (-not ) {
+if (-not $Layer) {
     Show-Menu
-     = Read-Host 'Select layer'
+    $Layer = Read-Host 'Select layer'
 }
 
-switch () {
+switch ($Layer) {
     '1' { Set-Location 'C:\EA_ENGINE\00_CORE' }
     '2' { Set-Location 'C:\EA_ENGINE\10_MEGAMESH' }
     '3' { Set-Location 'C:\EA_ENGINE\20_LEDGER' }
