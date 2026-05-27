@@ -1,0 +1,10 @@
+﻿[REPO::linux]
+timestamp: 2026-05-27T17:36:29+10:00
+
+url: https://github.com/torvalds/linux.git
+path: C:\~E14\linux
+status: exists
+shallow: True
+
+[holographic-exposure]
+mesh-hash: 

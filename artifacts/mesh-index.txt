@@ -1,0 +1,41 @@
+﻿[MESH::E14-REPO-INDEX]
+timestamp: 2026-05-27T17:36:29+10:00
+holographic-exposure: 
+
+repo: build-your-own-x
+  url: https://github.com/danistefanovic/build-your-own-x.git
+  path: C:\~E14\build-your-own-x
+  status: exists
+  shallow: False
+
+repo: awesome
+  url: https://github.com/sindresorhus/awesome.git
+  path: C:\~E14\awesome
+  status: exists
+  shallow: False
+
+repo: public-apis
+  url: https://github.com/public-apis/public-apis.git
+  path: C:\~E14\public-apis
+  status: exists
+  shallow: False
+
+repo: freeCodeCamp
+  url: https://github.com/freeCodeCamp/freeCodeCamp.git
+  path: C:\~E14\freeCodeCamp
+  status: exists
+  shallow: True
+
+repo: jdk
+  url: https://github.com/openjdk/jdk.git
+  path: C:\~E14\jdk
+  status: exists
+  shallow: True
+
+repo: linux
+  url: https://github.com/torvalds/linux.git
+  path: C:\~E14\linux
+  status: exists
+  shallow: True
+
+
