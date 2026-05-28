@@ -1,0 +1,7 @@
+{
+  "mesh": {
+    "nodes": "../mesh/nodes.json",
+    "links": "../mesh/links.json",
+    "grid": "../mesh/grid.json"
+  }
+}

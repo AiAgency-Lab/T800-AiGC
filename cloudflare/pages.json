@@ -1,0 +1,7 @@
+{
+  "cloudflare_pages": {
+    "framework": "static",
+    "build": "none",
+    "output": "/"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "engine": "identity_resolver",
+  "version": "1.0",
+  "description": "Resolves domain  slot  coordinate  node  wallet.",
+  "inputs": ["domain"],
+  "outputs": ["resolved"],
+  "logic": {
+    "steps": [
+      "lookup domain in registry/domains.json",
+      "find matching node in mesh/nodes.json",
+      "find slot in slots/index.json for that domain",
+      "resolve coordinates from slots/map.json",
+      "resolve wallet from slots/ownership.json or node.wallet",
+      "return full resolution object"
+    ]
+  }
+}

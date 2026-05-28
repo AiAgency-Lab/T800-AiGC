@@ -1,0 +1,8 @@
+{
+  "slots": [
+    { "slot_id": "slot_001", "domain": "robdoe.com" },
+    { "slot_id": "slot_002", "domain": "robertdoe.pw" },
+    { "slot_id": "slot_003", "domain": "aiagency101.pw" },
+    { "slot_id": "slot_004", "domain": "aiagency101.xyo" }
+  ]
+}

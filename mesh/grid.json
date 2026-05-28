@@ -1,0 +1,7 @@
+{
+  "grid": {
+    "type": "virtual_coordinate_space",
+    "dimensions": "infinite",
+    "unit": "slot"
+  }
+}

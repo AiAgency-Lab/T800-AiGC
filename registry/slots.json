@@ -1,0 +1,8 @@
+{
+  "slot_registry": {
+    "version": "1.0",
+    "slots": "../slots/index.json",
+    "ownership": "../slots/ownership.json",
+    "map": "../slots/map.json"
+  }
+}

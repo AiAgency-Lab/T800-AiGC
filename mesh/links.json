@@ -1,0 +1,8 @@
+{
+  "links": [
+    { "from": "node_robdoe_com", "to": "node_robertdoe_pw", "type": "identity_to_sovereign" },
+    { "from": "node_robdoe_com", "to": "node_aiagency101_pw", "type": "identity_to_agency" },
+    { "from": "node_aiagency101_pw", "to": "node_aiagency101_xyo", "type": "agency_to_mesh" },
+    { "from": "node_robertdoe_pw", "to": "node_aiagency101_xyo", "type": "sovereign_to_mesh" }
+  ]
+}

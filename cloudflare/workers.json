@@ -1,0 +1,11 @@
+{
+  "workers": {
+    "routes": "../cloudflare/routes.json",
+    "scripts": {
+      "agency-worker": "workers/agency-worker.js",
+      "mesh-worker": "workers/mesh-worker.js"
+    },
+    "kv": [],
+    "durable_objects": []
+  }
+}

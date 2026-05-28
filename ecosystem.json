@@ -1,0 +1,27 @@
+{
+  "name": "AiAgency Sovereign Mesh",
+  "version": "1.0.0",
+  "wallet": "0x1ae2af702063d304f8ebac2153c91d79c62e381c",
+  "domains": [
+    "robdoe.com",
+    "robertdoe.pw",
+    "aiagency101.pw",
+    "aiagency101.xyo"
+  ],
+  "registry": {
+    "domains": "registry/domains.json",
+    "mesh": "registry/mesh.json",
+    "slots": "registry/slots.json",
+    "engines": "registry/engines.json"
+  },
+  "mesh": {
+    "nodes": "mesh/nodes.json",
+    "links": "mesh/links.json",
+    "grid": "mesh/grid.json"
+  },
+  "slots": {
+    "index": "slots/index.json",
+    "map": "slots/map.json",
+    "ownership": "slots/ownership.json"
+  }
+}

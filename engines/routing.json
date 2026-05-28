@@ -1,0 +1,7 @@
+{
+  "engine": "routing",
+  "version": "1.0",
+  "description": "Routes identity and slot queries across the mesh.",
+  "inputs": ["grid", "nodes"],
+  "outputs": ["route"]
+}

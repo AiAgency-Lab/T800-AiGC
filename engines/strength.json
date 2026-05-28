@@ -1,0 +1,7 @@
+{
+  "engine": "strength",
+  "version": "1.0",
+  "description": "Calculates mesh strength and node integrity.",
+  "inputs": ["nodes", "links"],
+  "outputs": ["strength_score"]
+}

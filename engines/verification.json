@@ -1,0 +1,7 @@
+{
+  "engine": "verification",
+  "version": "1.0",
+  "description": "Verifies identity, slot ownership, and mesh integrity.",
+  "inputs": ["identity", "slot", "mesh"],
+  "outputs": ["verified", "rejected"]
+}

@@ -1,0 +1,7 @@
+{
+  "engine": "identity",
+  "version": "1.0",
+  "description": "Resolves identity across domains and mesh coordinates.",
+  "inputs": ["public_identity", "sovereign_identity"],
+  "outputs": ["resolved_identity"]
+}

@@ -1,0 +1,6 @@
+{
+  "routes": [
+    { "pattern": "aiagency101.pw/*", "script": "agency-worker" },
+    { "pattern": "aiagency101.xyo/*", "script": "mesh-worker" }
+  ]
+}
