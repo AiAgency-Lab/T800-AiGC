@@ -1,7 +1,74 @@
-{
-  "grid": {
-    "type": "virtual_coordinate_space",
-    "dimensions": "infinite",
-    "unit": "slot"
-  }
-}
+[
+    {
+        "id":  "node_windows_host",
+        "name":  "Microsoft Windows 11 Pro",
+        "type":  "os",
+        "x":  0,
+        "y":  0,
+        "z":  1
+    },
+    {
+        "id":  "node_cpu",
+        "name":  "11th Gen Intel(R) Core(TM) i7-1185G7 @ 3.00GHz",
+        "type":  "cpu",
+        "x":  0,
+        "y":  1,
+        "z":  1
+    },
+    {
+        "id":  "node_gpu",
+        "name":  "Intel(R) Iris(R) Xe Graphics",
+        "type":  "gpu",
+        "x":  0,
+        "y":  2,
+        "z":  1
+    },
+    {
+        "id":  "node_tpm",
+        "name":  "TPM",
+        "type":  "tpm",
+        "x":  0,
+        "y":  3,
+        "z":  1
+    },
+    {
+        "id":  "node_bios",
+        "name":  "1.49.0",
+        "type":  "bios",
+        "x":  0,
+        "y":  4,
+        "z":  1
+    },
+    {
+        "id":  "node_network",
+        "name":  "Wi-Fi",
+        "type":  "network",
+        "x":  0,
+        "y":  5,
+        "z":  1
+    },
+    {
+        "id":  "node_wsl",
+        "name":  "Windows Subsystem for Linux",
+        "type":  "wsl",
+        "x":  1,
+        "y":  0,
+        "z":  1
+    },
+    {
+        "id":  "node_hyperv",
+        "name":  "Hyper-V Host",
+        "type":  "hyperv",
+        "x":  1,
+        "y":  2,
+        "z":  1
+    },
+    {
+        "id":  "node_git",
+        "name":  "Git",
+        "type":  "toolchain",
+        "x":  2,
+        "y":  0,
+        "z":  1
+    }
+]
