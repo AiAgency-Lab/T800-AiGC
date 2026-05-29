@@ -1,4 +1,4 @@
-﻿{
+{
   "nodes": [
     { "id":"node_robdoe_com",      "domain":"robdoe.com",      "wallet":"0x1ae2af702063d304f8ebac2153c91d79c62e381c", "coordinates":[0,0,0] },
     { "id":"node_robertdoe_pw",    "domain":"robertdoe.pw",    "wallet":"0x1ae2af702063d304f8ebac2153c91d79c62e381c", "coordinates":[0,1,0] },
