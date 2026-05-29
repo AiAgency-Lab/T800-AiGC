@@ -1,8 +1,1 @@
-{
-  "domains": [
-    { "name": "robdoe.com", "role": "public_identity" },
-    { "name": "robertdoe.pw", "role": "sovereign_identity" },
-    { "name": "aiagency101.pw", "role": "agency_portal" },
-    { "name": "aiagency101.xyo", "role": "coordinate_mesh" }
-  ]
-}
+﻿{ "domains": ["robdoe.com","robertdoe.pw","aiagency101.pw","aiagency101.xyo"] }

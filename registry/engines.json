@@ -1,8 +1,1 @@
-{
-  "engines": [
-    { "name": "verification", "file": "../engines/verification.json" },
-    { "name": "identity_resolver", "file": "../engines/identity_resolver.json" },
-    { "name": "strength", "file": "../engines/strength.json" },
-    { "name": "routing", "file": "../engines/routing.json" }
-  ]
-}
+﻿{ "engines": ["identity","sovereign","agency","mesh"] }
