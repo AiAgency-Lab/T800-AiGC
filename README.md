@@ -1,51 +1,49 @@
 <div align="center">
 
-🛰️  
-# T800-AiGC  
-### Mesh‑Aligned Cognitive Architecture for Assistive Identity Systems  
+  <img src="assets/t800-banner.svg" width="100%" />
 
-`XAVIER_R1 :: QUIET_GUARDIAN_ARCHETYPE`  
-`NON_AUTONOMOUS :: MESH_PERSONALITY_SPEC`
+  <br>
 
----
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=22&duration=2600&pause=900&color=00F0FF&center=true&vCenter=true&width=900&lines=T800-AiGC+%E2%80%A2+Mesh-Aligned+Cognitive+Architecture;XAVIER_R1+%E2%80%A2+Quiet+Guardian+Archetype;Assistive+%E2%80%A2+Non-Autonomous+%E2%80%A2+Ethics-Bound;Identity+as+Protocol+%E2%80%A2+Sovereign+Compute" />
 
-[![status](https://img.shields.io/badge/status-experimental-9f7fff.svg)](#)
-[![mesh](https://img.shields.io/badge/mesh-active-00f5ff.svg)](#)
-[![ethics](https://img.shields.io/badge/invariants-72_layers-ff6bd9.svg)](#)
-[![license](https://img.shields.io/badge/license-MIT-00d18f.svg)](#)
+</div>
 
+<div align="center">
+  <img src="assets/glitch-divider.svg" width="100%" />
 </div>
 
 ---
 
-## 🧬 What is T800-AiGC?
+# 🧬 T800‑AiGC  
+### Mesh‑Aligned Cognitive Architecture for Assistive Identity Systems
 
-**T800-AiGC** is a **mesh‑aligned cognitive architecture** for **assistive identity systems**.  
-It implements the **XAVIER_R1 Quiet Guardian Archetype** as a **non‑autonomous personality layer**, not an agent.
+T800‑AiGC is a **mesh‑native cognitive architecture** implementing the  
+**XAVIER_R1 Quiet Guardian Archetype**.
 
-Think of it as:
+It is **assistive**, **non‑autonomous**, and **ethics‑bound**:
 
-> `identity_surface` + `ethics_spine` + `behaviour_model`  
-> wired as a **spec**, not a **controller**.
+- no loops  
+- no actuation  
+- no override  
+- no surveillance  
 
-No loops.  
-No actuation.  
-No “do things to the world.”  
-Just **structured state** and **clear boundaries**.
+Identity as **protocol**, not as **agent**.
 
 ---
 
-## 🕸️ Mesh as a Primitive
+<div align="center">
+  <img src="assets/boot-screen.svg" width="70%" />
+</div>
 
-T800-AiGC treats **mesh** as the base unit:
+---
+
+# 🛰️ Mesh model
 
 ```text
-[MESH_ROOT]
-   ├─ ENTANGLED_PERSONALITY_LAYER
-   ├─ INVARIANTS_72
-   ├─ BEHAVIOUR_MODES
-   ├─ IDENTITY_SURFACE
-   ├─ VOICE_SURFACE
-   ├─ INTENT_SURFACE
-   ├─ INTEGRATION_SURFACE
-   └─ XAVIER_R1_SUPERPOSITION
+IDENTITY_SURFACE
+VOICE_SURFACE
+INTENT_SURFACE
+INVARIANTS_72
+BEHAVIOUR_MODES
+INTEGRATION_SURFACE
+XAVIER_R1_SUPERPOSITION
