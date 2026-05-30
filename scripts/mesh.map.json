@@ -1,0 +1,16 @@
+﻿{
+    "root":  "C:\\(   .   Y    .   )ENGINE\\scripts",
+    "nodes":  [
+                  {
+                      "id":  "machine_AIAGENCY101",
+                      "kind":  "machine",
+                      "hostname":  "AIAGENCY101",
+                      "windowsUser":  "Admin",
+                      "windowsDomain":  "AIAGENCY101",
+                      "path":  "C:\\(   .   Y    .   )ENGINE\\scripts"
+                  }
+              ],
+    "edges":  [
+
+              ]
+}

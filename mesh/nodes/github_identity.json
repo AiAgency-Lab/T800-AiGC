@@ -1,0 +1,9 @@
+﻿{
+    "surfaces":  {
+                     "github_surface":  {
+                                            "repo":  "AiAgency101"
+                                        }
+                 },
+    "id":  "github_identity",
+    "type":  "github_node"
+}

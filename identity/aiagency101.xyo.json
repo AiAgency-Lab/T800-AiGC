@@ -1,0 +1,12 @@
+{
+  "node": "aiagency101.xyo",
+  "role": "engine",
+  "lattice": 7200,
+  "tick": 12,
+  "deg": 0.05,
+  "anchors": {
+    "low": 0.05,
+    "mid": 0.075,
+    "high": 0.15
+  }
+}

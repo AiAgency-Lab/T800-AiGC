@@ -1,0 +1,10 @@
+﻿{
+    "surfaces":  {
+                     "xyo_surface":  {
+                                         "node_string":  "466e84df...",
+                                         "cid":  "pending"
+                                     }
+                 },
+    "id":  "xyo_identity",
+    "type":  "xyo_node"
+}

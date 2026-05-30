@@ -1,0 +1,9 @@
+﻿{
+  "surrogate": "(   .   Y   .   )ENGINE",
+  "roles": [
+    { "name": "core",       "weight": 1.0 },
+    { "name": "activation", "weight": 0.8 },
+    { "name": "pulse",      "weight": 0.6 },
+    { "name": "resonance",  "weight": 0.4 }
+  ]
+}

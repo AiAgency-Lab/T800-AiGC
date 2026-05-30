@@ -1,0 +1,9 @@
+﻿{
+    "surfaces":  {
+                     "identity_surface":  {
+                                              "root":  "true"
+                                          }
+                 },
+    "id":  "sovereign_identity",
+    "type":  "identity_root"
+}

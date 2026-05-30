@@ -1,0 +1,42 @@
+﻿[
+    {
+        "Status":  "online",
+        "Name":  "lucy",
+        "Time":  {
+                     "value":  "\/Date(1780122127166)\/",
+                     "DisplayHint":  2,
+                     "DateTime":  "Saturday, 30 May 2026 4:22:07 PM"
+                 },
+        "Type":  "intelligence"
+    },
+    {
+        "Status":  "online",
+        "Name":  "lucky",
+        "Time":  {
+                     "value":  "\/Date(1780122127194)\/",
+                     "DisplayHint":  2,
+                     "DateTime":  "Saturday, 30 May 2026 4:22:07 PM"
+                 },
+        "Type":  "rail"
+    },
+    {
+        "Status":  "online",
+        "Name":  "mesh",
+        "Time":  {
+                     "value":  "\/Date(1780122127220)\/",
+                     "DisplayHint":  2,
+                     "DateTime":  "Saturday, 30 May 2026 4:22:07 PM"
+                 },
+        "Type":  "router"
+    },
+    {
+        "Status":  "online",
+        "Name":  "engine",
+        "Time":  {
+                     "value":  "\/Date(1780122127249)\/",
+                     "DisplayHint":  2,
+                     "DateTime":  "Saturday, 30 May 2026 4:22:07 PM"
+                 },
+        "Type":  "orchestrator"
+    }
+]

@@ -1,0 +1,42 @@
+﻿[
+    {
+        "Name":  "robdoe.com",
+        "Type":  "domain",
+        "Status":  "bound",
+        "Time":  {
+                     "value":  "\/Date(1780122436674)\/",
+                     "DisplayHint":  2,
+                     "DateTime":  "Saturday, 30 May 2026 4:27:16 PM"
+                 }
+    },
+    {
+        "Name":  "robertdoe.pw",
+        "Type":  "domain",
+        "Status":  "bound",
+        "Time":  {
+                     "value":  "\/Date(1780122436677)\/",
+                     "DisplayHint":  2,
+                     "DateTime":  "Saturday, 30 May 2026 4:27:16 PM"
+                 }
+    },
+    {
+        "Name":  "aiagency101.pw",
+        "Type":  "domain",
+        "Status":  "bound",
+        "Time":  {
+                     "value":  "\/Date(1780122436679)\/",
+                     "DisplayHint":  2,
+                     "DateTime":  "Saturday, 30 May 2026 4:27:16 PM"
+                 }
+    },
+    {
+        "Name":  "aiagency101.xyo",
+        "Type":  "domain",
+        "Status":  "bound",
+        "Time":  {
+                     "value":  "\/Date(1780122436679)\/",
+                     "DisplayHint":  2,
+                     "DateTime":  "Saturday, 30 May 2026 4:27:16 PM"
+                 }
+    }
+]

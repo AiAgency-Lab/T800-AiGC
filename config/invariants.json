@@ -1,0 +1,24 @@
+﻿{
+  "surrogate": "(   .   Y   .   )ENGINE",
+
+  "circle": {
+    "full_degrees": 360,
+    "segments": 7200,
+    "degrees_per_segment": 0.05,
+    "arcminutes_per_segment": 3,
+    "arcseconds_per_segment": 180,
+    "segment_fraction": 0.0001388889
+  },
+
+  "time": {
+    "seconds_per_day": 86400,
+    "seconds_per_segment": 12,
+    "segments_per_day": 7200
+  },
+
+  "harmonics": {
+    "anchor_low": 0.05,
+    "anchor_mid": 0.075,
+    "anchor_high": 0.15
+  }
+}

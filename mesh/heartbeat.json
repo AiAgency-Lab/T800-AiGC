@@ -1,0 +1,566 @@
+﻿{
+    "AiAgency101.labs-agents-workers":  {
+                                            "last_seen":  "2026-05-30T17:13:08.3558618+10:00",
+                                            "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-agents-workers",
+                                            "status":  "online",
+                                            "type":  "ecosystem_node"
+                                        },
+    "schema":  {
+                   "last_seen":  "2026-05-30T17:13:08.3588405+10:00",
+                   "path":  "C:\\(   .   Y    .   )ENGINE\\schema",
+                   "status":  "online",
+                   "type":  "ecosystem_node"
+               },
+    "logs":  {
+                 "last_seen":  "2026-05-30T17:13:08.3578591+10:00",
+                 "path":  "C:\\(   .   Y    .   )ENGINE\\logs",
+                 "status":  "online",
+                 "type":  "ecosystem_node"
+             },
+    "AiAgency101.labs-security":  {
+                                      "last_seen":  "2026-05-30T17:13:08.3578591+10:00",
+                                      "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-security",
+                                      "status":  "online",
+                                      "type":  "ecosystem_node"
+                                  },
+    "assets":  {
+                   "last_seen":  "2026-05-30T17:13:08.3578591+10:00",
+                   "path":  "C:\\(   .   Y    .   )ENGINE\\assets",
+                   "status":  "online",
+                   "type":  "ecosystem_node"
+               },
+    "AiAgency101.labs-oracle-e14":  {
+                                        "last_seen":  "2026-05-30T17:13:08.3578591+10:00",
+                                        "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-oracle-e14",
+                                        "status":  "online",
+                                        "type":  "ecosystem_node"
+                                    },
+    "AiAgency101.labs-sandbox-playbooks":  {
+                                               "last_seen":  "2026-05-30T17:13:08.3578591+10:00",
+                                               "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-sandbox-playbooks",
+                                               "status":  "online",
+                                               "type":  "ecosystem_node"
+                                           },
+    "node_modules":  {
+                         "last_seen":  "2026-05-30T17:13:08.3588405+10:00",
+                         "path":  "C:\\(   .   Y    .   )ENGINE\\node_modules",
+                         "status":  "online",
+                         "type":  "ecosystem_node"
+                     },
+    "AiAgency101.labs-tracing":  {
+                                     "last_seen":  "2026-05-30T17:13:08.3578591+10:00",
+                                     "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-tracing",
+                                     "status":  "online",
+                                     "type":  "ecosystem_node"
+                                 },
+    "AiAgency101.labs-witness-mesh-tiles":  {
+                                                "last_seen":  "2026-05-30T17:13:08.3578591+10:00",
+                                                "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-witness-mesh-tiles",
+                                                "status":  "online",
+                                                "type":  "ecosystem_node"
+                                            },
+    "domain":  {
+                   "last_seen":  "2026-05-30T17:13:08.3578591+10:00",
+                   "path":  "C:\\(   .   Y    .   )ENGINE\\domain",
+                   "status":  "online",
+                   "type":  "ecosystem_node"
+               },
+    "AiAgency101.labs-engine-orchestration":  {
+                                                  "last_seen":  "2026-05-30T17:13:08.3568603+10:00",
+                                                  "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-engine-orchestration",
+                                                  "status":  "online",
+                                                  "type":  "ecosystem_node"
+                                              },
+    "AiAgency101.labs-atmospheric-truth-layer-spec":  {
+                                                          "last_seen":  "2026-05-30T17:13:08.3558618+10:00",
+                                                          "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-atmospheric-truth-layer-spec",
+                                                          "status":  "online",
+                                                          "type":  "ecosystem_node"
+                                                      },
+    "AiAgency101.labs-api-public":  {
+                                        "last_seen":  "2026-05-30T17:13:08.3558618+10:00",
+                                        "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-api-public",
+                                        "status":  "online",
+                                        "type":  "ecosystem_node"
+                                    },
+    "AiAgency101.labs-engine-core":  {
+                                         "last_seen":  "2026-05-30T17:13:08.3568603+10:00",
+                                         "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-engine-core",
+                                         "status":  "online",
+                                         "type":  "ecosystem_node"
+                                     },
+    "AiAgency101.labs-simulations-chaos":  {
+                                               "last_seen":  "2026-05-30T17:13:08.3578591+10:00",
+                                               "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-simulations-chaos",
+                                               "status":  "online",
+                                               "type":  "ecosystem_node"
+                                           },
+    "AiAgency101.labs-ledger-indexer":  {
+                                            "last_seen":  "2026-05-30T17:13:08.3568603+10:00",
+                                            "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-ledger-indexer",
+                                            "status":  "online",
+                                            "type":  "ecosystem_node"
+                                        },
+    "engine_core":  {
+                        "last_seen":  "2026-05-30T17:13:08.3578591+10:00",
+                        "path":  "C:\\(   .   Y    .   )ENGINE\\engine_core",
+                        "status":  "online",
+                        "type":  "ecosystem_node"
+                    },
+    "AiAgency101.labs-observability":  {
+                                           "last_seen":  "2026-05-30T17:13:08.3578591+10:00",
+                                           "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-observability",
+                                           "status":  "online",
+                                           "type":  "ecosystem_node"
+                                       },
+    "AiAgency101.labs-docs":  {
+                                  "last_seen":  "2026-05-30T17:13:08.3568603+10:00",
+                                  "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-docs",
+                                  "status":  "online",
+                                  "type":  "ecosystem_node"
+                              },
+    "AiAgency101.labs-sympy-invariants":  {
+                                              "last_seen":  "2026-05-30T17:13:08.3578591+10:00",
+                                              "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-sympy-invariants",
+                                              "status":  "online",
+                                              "type":  "ecosystem_node"
+                                          },
+    "AiAgency101.labs-api-internal":  {
+                                          "last_seen":  "2026-05-30T17:13:08.3558618+10:00",
+                                          "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-api-internal",
+                                          "status":  "online",
+                                          "type":  "ecosystem_node"
+                                      },
+    "AiAgency101.labs-meshvm-docker":  {
+                                           "last_seen":  "2026-05-30T17:13:08.3568603+10:00",
+                                           "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-meshvm-docker",
+                                           "status":  "online",
+                                           "type":  "ecosystem_node"
+                                       },
+    "AiAgency101.labs-api-gateway":  {
+                                         "last_seen":  "2026-05-30T17:13:08.3558618+10:00",
+                                         "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-api-gateway",
+                                         "status":  "online",
+                                         "type":  "ecosystem_node"
+                                     },
+    "AiAgency101.labs-security-audit":  {
+                                            "last_seen":  "2026-05-30T17:13:08.3578591+10:00",
+                                            "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-security-audit",
+                                            "status":  "online",
+                                            "type":  "ecosystem_node"
+                                        },
+    "AiAgency101.labs-agents-core":  {
+                                         "last_seen":  "2026-05-30T17:13:08.3558618+10:00",
+                                         "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-agents-core",
+                                         "status":  "online",
+                                         "type":  "ecosystem_node"
+                                     },
+    "config":  {
+                   "last_seen":  "2026-05-30T17:13:08.3578591+10:00",
+                   "path":  "C:\\(   .   Y    .   )ENGINE\\config",
+                   "status":  "online",
+                   "type":  "ecosystem_node"
+               },
+    "AiAgency101.labs-integrations-local":  {
+                                                "last_seen":  "2026-05-30T17:13:08.3568603+10:00",
+                                                "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-integrations-local",
+                                                "status":  "online",
+                                                "type":  "ecosystem_node"
+                                            },
+    "docs":  {
+                 "last_seen":  "2026-05-30T17:13:08.3578591+10:00",
+                 "path":  "C:\\(   .   Y    .   )ENGINE\\docs",
+                 "status":  "online",
+                 "type":  "ecosystem_node"
+             },
+    "AiAgency101.labs-agents-orchestrator":  {
+                                                 "last_seen":  "2026-05-30T17:13:08.3558618+10:00",
+                                                 "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-agents-orchestrator",
+                                                 "status":  "online",
+                                                 "type":  "ecosystem_node"
+                                             },
+    ".git":  {
+                 "last_seen":  "2026-05-30T17:13:08.3558618+10:00",
+                 "path":  "C:\\(   .   Y    .   )ENGINE\\.git",
+                 "status":  "online",
+                 "type":  "ecosystem_node"
+             },
+    "AiAgency101.labs-sympy-core":  {
+                                        "last_seen":  "2026-05-30T17:13:08.3578591+10:00",
+                                        "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-sympy-core",
+                                        "status":  "online",
+                                        "type":  "ecosystem_node"
+                                    },
+    "slots":  {
+                  "last_seen":  "2026-05-30T17:13:08.3588405+10:00",
+                  "path":  "C:\\(   .   Y    .   )ENGINE\\slots",
+                  "status":  "online",
+                  "type":  "ecosystem_node"
+              },
+    "AiAgency101.labs-simulations-load":  {
+                                              "last_seen":  "2026-05-30T17:13:08.3578591+10:00",
+                                              "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-simulations-load",
+                                              "status":  "online",
+                                              "type":  "ecosystem_node"
+                                          },
+    "AiAgency101.labs-integrations-github":  {
+                                                 "last_seen":  "2026-05-30T17:13:08.3568603+10:00",
+                                                 "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-integrations-github",
+                                                 "status":  "online",
+                                                 "type":  "ecosystem_node"
+                                             },
+    ".github":  {
+                    "last_seen":  "2026-05-30T17:13:08.3558618+10:00",
+                    "path":  "C:\\(   .   Y    .   )ENGINE\\.github",
+                    "status":  "online",
+                    "type":  "ecosystem_node"
+                },
+    "AiAgency101.labs-docker-mesh-compose":  {
+                                                 "last_seen":  "2026-05-30T17:13:08.3568603+10:00",
+                                                 "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-docker-mesh-compose",
+                                                 "status":  "online",
+                                                 "type":  "ecosystem_node"
+                                             },
+    "AiAgency101.labs-sandbox-agents":  {
+                                            "last_seen":  "2026-05-30T17:13:08.3578591+10:00",
+                                            "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-sandbox-agents",
+                                            "status":  "online",
+                                            "type":  "ecosystem_node"
+                                        },
+    "AiAgency101.labs-robdoe-site-infra":  {
+                                               "last_seen":  "2026-05-30T17:13:08.3578591+10:00",
+                                               "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-robdoe-site-infra",
+                                               "status":  "online",
+                                               "type":  "ecosystem_node"
+                                           },
+    "AiAgency101.labs-cli-admin":  {
+                                       "last_seen":  "2026-05-30T17:13:08.3558618+10:00",
+                                       "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-cli-admin",
+                                       "status":  "online",
+                                       "type":  "ecosystem_node"
+                                   },
+    "AiAgency101.labs-gvm-scheduler":  {
+                                           "last_seen":  "2026-05-30T17:13:08.3568603+10:00",
+                                           "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-gvm-scheduler",
+                                           "status":  "online",
+                                           "type":  "ecosystem_node"
+                                       },
+    "AiAgency101.labs-integrations-cloud":  {
+                                                "last_seen":  "2026-05-30T17:13:08.3568603+10:00",
+                                                "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-integrations-cloud",
+                                                "status":  "online",
+                                                "type":  "ecosystem_node"
+                                            },
+    "AiAgency101.labs-meshvm":  {
+                                    "last_seen":  "2026-05-30T17:13:08.3568603+10:00",
+                                    "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-meshvm",
+                                    "status":  "online",
+                                    "type":  "ecosystem_node"
+                                },
+    "AiAgency101.labs-gvm-runtime":  {
+                                         "last_seen":  "2026-05-30T17:13:08.3568603+10:00",
+                                         "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-gvm-runtime",
+                                         "status":  "online",
+                                         "type":  "ecosystem_node"
+                                     },
+    "AiAgency101.labs-cli":  {
+                                 "last_seen":  "2026-05-30T17:13:08.3558618+10:00",
+                                 "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-cli",
+                                 "status":  "online",
+                                 "type":  "ecosystem_node"
+                             },
+    "AiAgency101.labs-metrics":  {
+                                     "last_seen":  "2026-05-30T17:13:08.3578591+10:00",
+                                     "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-metrics",
+                                     "status":  "online",
+                                     "type":  "ecosystem_node"
+                                 },
+    "AiAgency101.labs-bootstrap-installers":  {
+                                                  "last_seen":  "2026-05-30T17:13:08.3558618+10:00",
+                                                  "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-bootstrap-installers",
+                                                  "status":  "online",
+                                                  "type":  "ecosystem_node"
+                                              },
+    "AiAgency101.labs-docs-protocols":  {
+                                            "last_seen":  "2026-05-30T17:13:08.3568603+10:00",
+                                            "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-docs-protocols",
+                                            "status":  "online",
+                                            "type":  "ecosystem_node"
+                                        },
+    "mesh":  {
+                 "last_seen":  "2026-05-30T17:13:08.3588405+10:00",
+                 "path":  "C:\\(   .   Y    .   )ENGINE\\mesh",
+                 "status":  "online",
+                 "type":  "ecosystem_node"
+             },
+    "activation":  {
+                       "last_seen":  "2026-05-30T17:13:08.3558618+10:00",
+                       "path":  "C:\\(   .   Y    .   )ENGINE\\activation",
+                       "status":  "online",
+                       "type":  "ecosystem_node"
+                   },
+    "AiAgency101.labs-witness-mesh-ingest":  {
+                                                 "last_seen":  "2026-05-30T17:13:08.3578591+10:00",
+                                                 "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-witness-mesh-ingest",
+                                                 "status":  "online",
+                                                 "type":  "ecosystem_node"
+                                             },
+    "AiAgency101.labs-witness-mesh":  {
+                                          "last_seen":  "2026-05-30T17:13:08.3578591+10:00",
+                                          "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-witness-mesh",
+                                          "status":  "online",
+                                          "type":  "ecosystem_node"
+                                      },
+    "scripts":  {
+                    "last_seen":  "2026-05-30T17:13:08.3588405+10:00",
+                    "path":  "C:\\(   .   Y    .   )ENGINE\\scripts",
+                    "status":  "online",
+                    "type":  "ecosystem_node"
+                },
+    "AiAgency101.labs-root":  {
+                                  "last_seen":  "2026-05-30T17:13:08.3578591+10:00",
+                                  "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-root",
+                                  "status":  "online",
+                                  "type":  "ecosystem_node"
+                              },
+    "registry":  {
+                     "last_seen":  "2026-05-30T17:13:08.3588405+10:00",
+                     "path":  "C:\\(   .   Y    .   )ENGINE\\registry",
+                     "status":  "online",
+                     "type":  "ecosystem_node"
+                 },
+    "AiAgency101.labs-engine-cli":  {
+                                        "last_seen":  "2026-05-30T17:13:08.3568603+10:00",
+                                        "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-engine-cli",
+                                        "status":  "online",
+                                        "type":  "ecosystem_node"
+                                    },
+    "AiAgency101.labs-meshvm-wsl":  {
+                                        "last_seen":  "2026-05-30T17:13:08.3568603+10:00",
+                                        "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-meshvm-wsl",
+                                        "status":  "online",
+                                        "type":  "ecosystem_node"
+                                    },
+    "workers":  {
+                    "last_seen":  "2026-05-30T17:13:08.3588405+10:00",
+                    "path":  "C:\\(   .   Y    .   )ENGINE\\workers",
+                    "status":  "online",
+                    "type":  "ecosystem_node"
+                },
+    "AiAgency101.labs-engine":  {
+                                    "last_seen":  "2026-05-30T17:13:08.3568603+10:00",
+                                    "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-engine",
+                                    "status":  "online",
+                                    "type":  "ecosystem_node"
+                                },
+    "AiAgency101.labs-robdoe-site-content":  {
+                                                 "last_seen":  "2026-05-30T17:13:08.3578591+10:00",
+                                                 "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-robdoe-site-content",
+                                                 "status":  "online",
+                                                 "type":  "ecosystem_node"
+                                             },
+    "AiAgency101.labs-oracle-e14-protocol":  {
+                                                 "last_seen":  "2026-05-30T17:13:08.3578591+10:00",
+                                                 "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-oracle-e14-protocol",
+                                                 "status":  "online",
+                                                 "type":  "ecosystem_node"
+                                             },
+    "identity":  {
+                     "last_seen":  "2026-05-30T17:13:08.3578591+10:00",
+                     "path":  "C:\\(   .   Y    .   )ENGINE\\identity",
+                     "status":  "online",
+                     "type":  "ecosystem_node"
+                 },
+    "AiAgency101.labs-oracle-e14-clients":  {
+                                                "last_seen":  "2026-05-30T17:13:08.3578591+10:00",
+                                                "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-oracle-e14-clients",
+                                                "status":  "online",
+                                                "type":  "ecosystem_node"
+                                            },
+    "AiAgency101.labs-hyperv-substrate":  {
+                                              "last_seen":  "2026-05-30T17:13:08.3568603+10:00",
+                                              "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-hyperv-substrate",
+                                              "status":  "online",
+                                              "type":  "ecosystem_node"
+                                          },
+    "AiAgency101.labs-bootstrap":  {
+                                       "last_seen":  "2026-05-30T17:13:08.3558618+10:00",
+                                       "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-bootstrap",
+                                       "status":  "online",
+                                       "type":  "ecosystem_node"
+                                   },
+    "AiAgency101.labs-sympy-constraints":  {
+                                               "last_seen":  "2026-05-30T17:13:08.3578591+10:00",
+                                               "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-sympy-constraints",
+                                               "status":  "online",
+                                               "type":  "ecosystem_node"
+                                           },
+    "AiAgency101.labs-identity-core":  {
+                                           "last_seen":  "2026-05-30T17:13:08.3568603+10:00",
+                                           "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-identity-core",
+                                           "status":  "online",
+                                           "type":  "ecosystem_node"
+                                       },
+    "AiAgency101.labs-witness-mesh-ticks":  {
+                                                "last_seen":  "2026-05-30T17:13:08.3578591+10:00",
+                                                "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-witness-mesh-ticks",
+                                                "status":  "online",
+                                                "type":  "ecosystem_node"
+                                            },
+    "AiAgency101.labs-ledger-explorer":  {
+                                             "last_seen":  "2026-05-30T17:13:08.3568603+10:00",
+                                             "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-ledger-explorer",
+                                             "status":  "online",
+                                             "type":  "ecosystem_node"
+                                         },
+    "engines":  {
+                    "last_seen":  "2026-05-30T17:13:08.3578591+10:00",
+                    "path":  "C:\\(   .   Y    .   )ENGINE\\engines",
+                    "status":  "online",
+                    "type":  "ecosystem_node"
+                },
+    "AiAgency101.labs-cli-operator":  {
+                                          "last_seen":  "2026-05-30T17:13:08.3558618+10:00",
+                                          "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-cli-operator",
+                                          "status":  "online",
+                                          "type":  "ecosystem_node"
+                                      },
+    "state":  {
+                  "last_seen":  "2026-05-30T17:13:08.3588405+10:00",
+                  "path":  "C:\\(   .   Y    .   )ENGINE\\state",
+                  "status":  "online",
+                  "type":  "ecosystem_node"
+              },
+    "AiAgency101.labs-gvm":  {
+                                 "last_seen":  "2026-05-30T17:13:08.3568603+10:00",
+                                 "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-gvm",
+                                 "status":  "online",
+                                 "type":  "ecosystem_node"
+                             },
+    "AiAgency101.labs-docker-mesh-images":  {
+                                                "last_seen":  "2026-05-30T17:13:08.3568603+10:00",
+                                                "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-docker-mesh-images",
+                                                "status":  "online",
+                                                "type":  "ecosystem_node"
+                                            },
+    "AiAgency101.labs-engine-api":  {
+                                        "last_seen":  "2026-05-30T17:13:08.3568603+10:00",
+                                        "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-engine-api",
+                                        "status":  "online",
+                                        "type":  "ecosystem_node"
+                                    },
+    "AiAgency101.labs-simulations":  {
+                                         "last_seen":  "2026-05-30T17:13:08.3578591+10:00",
+                                         "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-simulations",
+                                         "status":  "online",
+                                         "type":  "ecosystem_node"
+                                     },
+    "cloudflare":  {
+                       "last_seen":  "2026-05-30T17:13:08.3578591+10:00",
+                       "path":  "C:\\(   .   Y    .   )ENGINE\\cloudflare",
+                       "status":  "online",
+                       "type":  "ecosystem_node"
+                   },
+    "AiAgency101.labs-identity-wallet":  {
+                                             "last_seen":  "2026-05-30T17:13:08.3568603+10:00",
+                                             "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-identity-wallet",
+                                             "status":  "online",
+                                             "type":  "ecosystem_node"
+                                         },
+    "AiAgency101.labs-sandbox":  {
+                                     "last_seen":  "2026-05-30T17:13:08.3578591+10:00",
+                                     "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-sandbox",
+                                     "status":  "online",
+                                     "type":  "ecosystem_node"
+                                 },
+    "AiAgency101.labs-meshvm-hyperv":  {
+                                           "last_seen":  "2026-05-30T17:13:08.3568603+10:00",
+                                           "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-meshvm-hyperv",
+                                           "status":  "online",
+                                           "type":  "ecosystem_node"
+                                       },
+    "AiAgency101.labs-ledger-core":  {
+                                         "last_seen":  "2026-05-30T17:13:08.3568603+10:00",
+                                         "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-ledger-core",
+                                         "status":  "online",
+                                         "type":  "ecosystem_node"
+                                     },
+    "src":  {
+                "last_seen":  "2026-05-30T17:13:08.3588405+10:00",
+                "path":  "C:\\(   .   Y    .   )ENGINE\\src",
+                "status":  "online",
+                "type":  "ecosystem_node"
+            },
+    "AiAgency101.labs-atmospheric-truth-layer-impl":  {
+                                                          "last_seen":  "2026-05-30T17:13:08.3558618+10:00",
+                                                          "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-atmospheric-truth-layer-impl",
+                                                          "status":  "online",
+                                                          "type":  "ecosystem_node"
+                                                      },
+    "AiAgency101.labs-robdoe-site":  {
+                                         "last_seen":  "2026-05-30T17:13:08.3578591+10:00",
+                                         "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-robdoe-site",
+                                         "status":  "online",
+                                         "type":  "ecosystem_node"
+                                     },
+    "AiAgency101.labs-docker-mesh":  {
+                                         "last_seen":  "2026-05-30T17:13:08.3558618+10:00",
+                                         "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-docker-mesh",
+                                         "status":  "online",
+                                         "type":  "ecosystem_node"
+                                     },
+    "AiAgency101.labs-docs-architecture":  {
+                                               "last_seen":  "2026-05-30T17:13:08.3568603+10:00",
+                                               "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-docs-architecture",
+                                               "status":  "online",
+                                               "type":  "ecosystem_node"
+                                           },
+    "AiAgency101.labs-hyperv-xyonode01":  {
+                                              "last_seen":  "2026-05-30T17:13:08.3568603+10:00",
+                                              "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-hyperv-xyonode01",
+                                              "status":  "online",
+                                              "type":  "ecosystem_node"
+                                          },
+    "AiAgency101.labs-atmospheric-truth-layer":  {
+                                                     "last_seen":  "2026-05-30T17:13:08.3558618+10:00",
+                                                     "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-atmospheric-truth-layer",
+                                                     "status":  "online",
+                                                     "type":  "ecosystem_node"
+                                                 },
+    "prompts":  {
+                    "last_seen":  "2026-05-30T17:13:08.3588405+10:00",
+                    "path":  "C:\\(   .   Y    .   )ENGINE\\prompts",
+                    "status":  "online",
+                    "type":  "ecosystem_node"
+                },
+    "AiAgency101.labs-hyperv-xyonode-fleet":  {
+                                                  "last_seen":  "2026-05-30T17:13:08.3568603+10:00",
+                                                  "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-hyperv-xyonode-fleet",
+                                                  "status":  "online",
+                                                  "type":  "ecosystem_node"
+                                              },
+    "AiAgency101.labs-identity-mesh":  {
+                                           "last_seen":  "2026-05-30T17:13:08.3568603+10:00",
+                                           "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-identity-mesh",
+                                           "status":  "online",
+                                           "type":  "ecosystem_node"
+                                       },
+    "AiAgency101.labs-logging":  {
+                                     "last_seen":  "2026-05-30T17:13:08.3568603+10:00",
+                                     "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-logging",
+                                     "status":  "online",
+                                     "type":  "ecosystem_node"
+                                 },
+    "tests":  {
+                  "last_seen":  "2026-05-30T17:13:08.3588405+10:00",
+                  "path":  "C:\\(   .   Y    .   )ENGINE\\tests",
+                  "status":  "online",
+                  "type":  "ecosystem_node"
+              },
+    "AiAgency101.labs-security-policies":  {
+                                               "last_seen":  "2026-05-30T17:13:08.3578591+10:00",
+                                               "path":  "C:\\(   .   Y    .   )ENGINE\\AiAgency101.labs-security-policies",
+                                               "status":  "online",
+                                               "type":  "ecosystem_node"
+                                           }
+}

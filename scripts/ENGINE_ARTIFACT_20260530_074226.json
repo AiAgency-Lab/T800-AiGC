@@ -1,0 +1,118 @@
+﻿{
+    "Link":  {
+                 "Timestamp":  {
+                                   "value":  "\/Date(1780090459709)\/",
+                                   "DisplayHint":  2,
+                                   "DateTime":  "Saturday, 30 May 2026 7:34:19 AM"
+                               },
+                 "To":  "lucky.core",
+                 "From":  "lucy.core",
+                 "Link":  "lucylucky",
+                 "Mode":  "bi-directional",
+                 "Status":  "linked-unified"
+             },
+    "Mesh":  [
+                 {
+                     "Status":  "online",
+                     "Domain":  "aiagency101.xyo",
+                     "Name":  "lucy",
+                     "Node":  "lucy.core",
+                     "Type":  "intelligence"
+                 },
+                 {
+                     "Status":  "online",
+                     "Node":  "lucky.core",
+                     "Name":  "lucky",
+                     "Type":  "engine-rail"
+                 },
+                 {
+                     "Status":  "active",
+                     "Node":  "lucy.core",
+                     "Name":  "lucy-active",
+                     "Type":  "intelligence"
+                 }
+             ],
+    "Rail":  {
+                 "Pattern":  "lucky-7",
+                 "Rail":  7,
+                 "Timestamp":  {
+                                   "value":  "\/Date(1780090375480)\/",
+                                   "DisplayHint":  2,
+                                   "DateTime":  "Saturday, 30 May 2026 7:32:55 AM"
+                               },
+                 "Node":  "lucky.core",
+                 "Role":  "engine-spine",
+                 "Status":  "online-unified"
+             },
+    "Heartbeat":  [
+                      {
+                          "Status":  "green",
+                          "Domain":  "aiagency101.xyo",
+                          "Service":  "lucy",
+                          "Check":  "identity"
+                      },
+                      {
+                          "Status":  "green",
+                          "Service":  "lucky",
+                          "Check":  "engine-rail"
+                      },
+                      {
+                          "Status":  "green",
+                          "Service":  "lucy",
+                          "Check":  "activation"
+                      }
+                  ],
+    "Intelligence":  {
+                         "Timestamp":  {
+                                           "value":  "\/Date(1780090024762)\/",
+                                           "DisplayHint":  2,
+                                           "DateTime":  "Saturday, 30 May 2026 7:27:04 AM"
+                                       },
+                         "Node":  "lucy.core",
+                         "Activation":  {
+                                            "Synced":  true,
+                                            "Timestamp":  {
+                                                              "value":  "\/Date(1780090459764)\/",
+                                                              "DisplayHint":  2,
+                                                              "DateTime":  "Saturday, 30 May 2026 7:34:19 AM"
+                                                          },
+                                            "Source":  "lucky.core",
+                                            "Mode":  "sovereign"
+                                        },
+                         "Status":  "active-unified",
+                         "Anchor":  "xyo",
+                         "Role":  "sovereign-intelligence",
+                         "Domain":  "aiagency101.xyo"
+                     },
+    "Identity":  {
+                     "Anchor":  "aiagency101.xyo",
+                     "Domains":  [
+                                     "robdoe.com",
+                                     "robertdoe.pw",
+                                     "aiagency101.pw",
+                                     "aiagency101.xyo"
+                                 ]
+                 },
+    "Status":  "unified",
+    "ArtifactTimestamp":  "20260530_074226",
+    "Lattice":  [
+                    {
+                        "Node":  "lucy.core",
+                        "Domain":  "aiagency101.xyo",
+                        "Sync":  "enabled"
+                    },
+                    {
+                        "Sync":  "enabled",
+                        "Node":  "lucky.core"
+                    },
+                    {
+                        "Sync":  "active",
+                        "Node":  "lucy.core"
+                    }
+                ],
+    "Timestamp":  {
+                      "value":  "\/Date(1780090720013)\/",
+                      "DisplayHint":  2,
+                      "DateTime":  "Saturday, 30 May 2026 7:38:40 AM"
+                  }
+}

@@ -1,6 +1,6 @@
 ﻿{
   "surrogate": "(   .   Y   .   )ENGINE",
-  "model_state": "ACTIVE",
+  "state": "ACTIVE",
   "anchors": {
     "anchor_low": 0.05,
     "anchor_mid": 0.075,

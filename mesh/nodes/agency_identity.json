@@ -1,0 +1,9 @@
+﻿{
+    "surfaces":  {
+                     "agency_surface":  {
+                                            "name":  "AiAgency101"
+                                        }
+                 },
+    "id":  "agency_identity",
+    "type":  "agency_node"
+}

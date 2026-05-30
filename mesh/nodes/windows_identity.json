@@ -1,0 +1,9 @@
+﻿{
+    "surfaces":  {
+                     "os_surface":  {
+                                        "platform":  "Windows"
+                                    }
+                 },
+    "id":  "windows_identity",
+    "type":  "os_node"
+}

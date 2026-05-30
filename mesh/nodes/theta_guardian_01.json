@@ -1,0 +1,22 @@
+﻿{
+    "status":  "pending_stake",
+    "surfaces":  {
+                     "voting_surface":  {
+                                            "active":  false,
+                                            "voting_power":  0
+                                        },
+                     "identity_surface":  {
+                                              "public_address":  "0x31bcb511002069254726bdcf3b6f6270e0275ff4"
+                                          },
+                     "staking_surface":  {
+                                             "staked":  false,
+                                             "amount":  0
+                                         },
+                     "uptime_surface":  {
+                                            "last_seen":  "2026-05-30T06:42:45.1892614+10:00"
+                                        }
+                 },
+    "id":  "theta_guardian_01",
+    "type":  "theta_guardian_node",
+    "address":  "0x31bcb511002069254726bdcf3b6f6270e0275ff4"
+}
