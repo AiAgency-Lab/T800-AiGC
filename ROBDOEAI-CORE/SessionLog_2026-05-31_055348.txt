@@ -1,0 +1,522 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20260531055348
+Username: ROBDOEAI-CORE\Admin
+RunAs User: ROBDOEAI-CORE\Admin
+Configuration Name: 
+Machine: ROBDOEAI-CORE (Microsoft Windows NT 10.0.22621.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 2308
+PSVersion: 5.1.22621.6060
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.6060
+BuildVersion: 10.0.22621.6060
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\PowerShellLogs\ROBDOEAI-CORE\SessionLog_2026-05-31_055348.txt
+RobDoeAi PS C:\(   .   Y   .   )ENGINE> Write-Host "Logging started for Node: $nodeName" -ForegroundColor Green
+Logging started for Node: ROBDOEAI-CORE
+RobDoeAi PS C:\(   .   Y   .   )ENGINE> Write-Host "Log location: $logFile" -ForegroundColor Cyan
+Log location: C:\PowerShellLogs\ROBDOEAI-CORE\SessionLog_2026-05-31_055348.txt
+RobDoeAi PS C:\(   .   Y   .   )ENGINE> # Drops everything to the log, including errors and internal noise
+RobDoeAi PS C:\(   .   Y   .   )ENGINE> Your-Command-Here *>> "C:\Logs\Mesh_Node_Log.txt"
+Your-Command-Here : The term 'Your-Command-Here' is not recognized as the name of a cmdlet, function, script file, or 
+operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try 
+again.
+At line:1 char:1
++ Your-Command-Here *>> "C:\Logs\Mesh_Node_Log.txt"
++ ~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Your-Command-Here:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+Your-Command-Here : The term 'Your-Command-Here' is not recognized as the name of a cmdlet, function, script file, or operable program. Check
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ Your-Command-Here *>> "C:\Logs\Mesh_Node_Log.txt"
++ ~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Your-Command-Here:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+RobDoeAi PS C:\(   .   Y   .   )ENGINE> # Define the capture path
+RobDoeAi PS C:\(   .   Y   .   )ENGINE> $LogPath = "C:\PowerShellLogs\$($env:COMPUTERNAME)_Audit.log"
+RobDoeAi PS C:\(   .   Y   .   )ENGINE> # Force all output streams to the log
+RobDoeAi PS C:\(   .   Y   .   )ENGINE> & {
+    # Put your mesh logic/scripts here
+    Write-Host "Running Mesh Logic..." -ForegroundColor Cyan
+    Get-Service | Where-Object Status -eq 'Running'
+    # Force an error to test capture
+    Get-Item "C:\NonExistentFile" -ErrorAction Stop
+} *>> $LogPath
+>> ParameterBinding(Out-File): name="InputObject"; value="Running Mesh Logic..."
+Running Mesh Logic...
+RobDoeAi PS C:\(   .   Y   .   )ENGINE> ParameterBinding(Out-File): name="InputObject"; value="AppHostSvc"
+>> ParameterBinding(Out-File): name="InputObject"; value="Appinfo"
+>> ParameterBinding(Out-File): name="InputObject"; value="AudioEndpointBuilder"
+>> ParameterBinding(Out-File): name="InputObject"; value="Audiosrv"
+>> ParameterBinding(Out-File): name="InputObject"; value="BFE"
+>> ParameterBinding(Out-File): name="InputObject"; value="BluetoothUserService_97dc9"
+>> ParameterBinding(Out-File): name="InputObject"; value="BrokerInfrastructure"
+>> ParameterBinding(Out-File): name="InputObject"; value="BTAGService"
+>> ParameterBinding(Out-File): name="InputObject"; value="BthAvctpSvc"
+>> ParameterBinding(Out-File): name="InputObject"; value="bthserv"
+>> ParameterBinding(Out-File): name="InputObject"; value="camsvc"
+>> ParameterBinding(Out-File): name="InputObject"; value="cbdhsvc_97dc9"
+>> ParameterBinding(Out-File): name="InputObject"; value="CDPSvc"
+>> ParameterBinding(Out-File): name="InputObject"; value="CDPUserSvc_97dc9"
+>> ParameterBinding(Out-File): name="InputObject"; value="CertPropSvc"
+>> ParameterBinding(Out-File): name="InputObject"; value="CoreMessagingRegistrar"
+>> ParameterBinding(Out-File): name="InputObject"; value="cplspcon"
+>> ParameterBinding(Out-File): name="InputObject"; value="CryptSvc"
+>> ParameterBinding(Out-File): name="InputObject"; value="DcomLaunch"
+>> ParameterBinding(Out-File): name="InputObject"; value="DeviceAssociationService"
+>> ParameterBinding(Out-File): name="InputObject"; value="DevicesFlowUserSvc_97dc9"
+>> ParameterBinding(Out-File): name="InputObject"; value="DevQueryBroker"
+>> ParameterBinding(Out-File): name="InputObject"; value="Dhcp"
+>> ParameterBinding(Out-File): name="InputObject"; value="DiagTrack"
+>> ParameterBinding(Out-File): name="InputObject"; value="DispBrokerDesktopSvc"
+>> ParameterBinding(Out-File): name="InputObject"; value="DisplayEnhancementService"
+>> ParameterBinding(Out-File): name="InputObject"; value="Dnscache"
+>> ParameterBinding(Out-File): name="InputObject"; value="DoSvc"
+>> ParameterBinding(Out-File): name="InputObject"; value="DPS"
+>> ParameterBinding(Out-File): name="InputObject"; value="DSDWirelessLEDCtlService"
+>> ParameterBinding(Out-File): name="InputObject"; value="DsSvc"
+>> ParameterBinding(Out-File): name="InputObject"; value="DusmSvc"
+>> ParameterBinding(Out-File): name="InputObject"; value="dynabookSettingService"
+>> ParameterBinding(Out-File): name="InputObject"; value="esifsvc"
+>> ParameterBinding(Out-File): name="InputObject"; value="EventLog"
+>> ParameterBinding(Out-File): name="InputObject"; value="EventSystem"
+>> ParameterBinding(Out-File): name="InputObject"; value="fhsvc"
+>> ParameterBinding(Out-File): name="InputObject"; value="FirmwareSwitchService"
+>> ParameterBinding(Out-File): name="InputObject"; value="FontCache"
+>> ParameterBinding(Out-File): name="InputObject"; value="FontCache3.0.0.0"
+>> ParameterBinding(Out-File): name="InputObject"; value="FrameServer"
+>> ParameterBinding(Out-File): name="InputObject"; value="FrameServerMonitor"
+>> ParameterBinding(Out-File): name="InputObject"; value="GooglePlayGamesServices-26.5.505.0"
+>> ParameterBinding(Out-File): name="InputObject"; value="gpsvc"
+>> ParameterBinding(Out-File): name="InputObject"; value="hidserv"
+>> ParameterBinding(Out-File): name="InputObject"; value="hns"
+>> ParameterBinding(Out-File): name="InputObject"; value="HPPrintScanDoctorService"
+>> ParameterBinding(Out-File): name="InputObject"; value="HvHost"
+>> ParameterBinding(Out-File): name="InputObject"; value="igfxCUIService2.0.0.0"
+>> ParameterBinding(Out-File): name="InputObject"; value="InstallService"
+>> ParameterBinding(Out-File): name="InputObject"; value="IntelAudioService"
+>> ParameterBinding(Out-File): name="InputObject"; value="IntelGraphicsSoftwareService"
+>> ParameterBinding(Out-File): name="InputObject"; value="iphlpsvc"
+>> ParameterBinding(Out-File): name="InputObject"; value="jhi_service"
+>> ParameterBinding(Out-File): name="InputObject"; value="KeyIso"
+>> ParameterBinding(Out-File): name="InputObject"; value="LanmanServer"
+>> ParameterBinding(Out-File): name="InputObject"; value="LanmanWorkstation"
+>> ParameterBinding(Out-File): name="InputObject"; value="lfsvc"
+>> ParameterBinding(Out-File): name="InputObject"; value="LicenseManager"
+>> ParameterBinding(Out-File): name="InputObject"; value="lmhosts"
+>> ParameterBinding(Out-File): name="InputObject"; value="LSM"
+>> ParameterBinding(Out-File): name="InputObject"; value="MDCoreSvc"
+>> ParameterBinding(Out-File): name="InputObject"; value="mpssvc"
+>> ParameterBinding(Out-File): name="InputObject"; value="NcbService"
+>> ParameterBinding(Out-File): name="InputObject"; value="Netman"
+>> ParameterBinding(Out-File): name="InputObject"; value="netprofm"
+>> ParameterBinding(Out-File): name="InputObject"; value="NPSMSvc_97dc9"
+>> ParameterBinding(Out-File): name="InputObject"; value="nsi"
+>> ParameterBinding(Out-File): name="InputObject"; value="nvagent"
+>> ParameterBinding(Out-File): name="InputObject"; value="OneSyncSvc_97dc9"
+>> ParameterBinding(Out-File): name="InputObject"; value="PcaSvc"
+>> ParameterBinding(Out-File): name="InputObject"; value="PhoneSvc"
+>> ParameterBinding(Out-File): name="InputObject"; value="PIEServiceNew"
+>> ParameterBinding(Out-File): name="InputObject"; value="PimIndexMaintenanceSvc_97dc9"
+>> ParameterBinding(Out-File): name="InputObject"; value="PlugPlay"
+>> ParameterBinding(Out-File): name="InputObject"; value="Power"
+>> ParameterBinding(Out-File): name="InputObject"; value="ProfSvc"
+>> ParameterBinding(Out-File): name="InputObject"; value="RasMan"
+>> ParameterBinding(Out-File): name="InputObject"; value="RmSvc"
+>> ParameterBinding(Out-File): name="InputObject"; value="RpcEptMapper"
+>> ParameterBinding(Out-File): name="InputObject"; value="RpcSs"
+>> ParameterBinding(Out-File): name="InputObject"; value="RtkAudioUniversalService"
+>> ParameterBinding(Out-File): name="InputObject"; value="SamSs"
+>> ParameterBinding(Out-File): name="InputObject"; value="SamsungQuickShareService"
+>> ParameterBinding(Out-File): name="InputObject"; value="Schedule"
+>> ParameterBinding(Out-File): name="InputObject"; value="SecurityHealthService"
+>> ParameterBinding(Out-File): name="InputObject"; value="SENS"
+>> ParameterBinding(Out-File): name="InputObject"; value="SessionEnv"
+>> ParameterBinding(Out-File): name="InputObject"; value="SharedAccess"
+>> ParameterBinding(Out-File): name="InputObject"; value="ShellHWDetection"
+>> ParameterBinding(Out-File): name="InputObject"; value="simptcp"
+>> ParameterBinding(Out-File): name="InputObject"; value="SmsRouter"
+>> ParameterBinding(Out-File): name="InputObject"; value="Spooler"
+>> ParameterBinding(Out-File): name="InputObject"; value="SSDPSRV"
+>> ParameterBinding(Out-File): name="InputObject"; value="ssh-agent"
+>> ParameterBinding(Out-File): name="InputObject"; value="SstpSvc"
+>> ParameterBinding(Out-File): name="InputObject"; value="StateRepository"
+>> ParameterBinding(Out-File): name="InputObject"; value="StiSvc"
+>> ParameterBinding(Out-File): name="InputObject"; value="StorSvc"
+>> ParameterBinding(Out-File): name="InputObject"; value="SysMain"
+>> ParameterBinding(Out-File): name="InputObject"; value="SystemEventsBroker"
+>> ParameterBinding(Out-File): name="InputObject"; value="TbtP2pShortcutService"
+>> ParameterBinding(Out-File): name="InputObject"; value="TermService"
+>> ParameterBinding(Out-File): name="InputObject"; value="TextInputManagementService"
+>> ParameterBinding(Out-File): name="InputObject"; value="Themes"
+>> ParameterBinding(Out-File): name="InputObject"; value="TimeBrokerSvc"
+>> ParameterBinding(Out-File): name="InputObject"; value="TokenBroker"
+>> ParameterBinding(Out-File): name="InputObject"; value="TrkWks"
+>> ParameterBinding(Out-File): name="InputObject"; value="UdkUserSvc_97dc9"
+>> ParameterBinding(Out-File): name="InputObject"; value="UmRdpService"
+>> ParameterBinding(Out-File): name="InputObject"; value="UnistoreSvc_97dc9"
+>> ParameterBinding(Out-File): name="InputObject"; value="UserDataSvc_97dc9"
+>> ParameterBinding(Out-File): name="InputObject"; value="UserManager"
+>> ParameterBinding(Out-File): name="InputObject"; value="UsoSvc"
+>> ParameterBinding(Out-File): name="InputObject"; value="VaultSvc"
+>> ParameterBinding(Out-File): name="InputObject"; value="vmcompute"
+>> ParameterBinding(Out-File): name="InputObject"; value="vmms"
+>> ParameterBinding(Out-File): name="InputObject"; value="W32Time"
+>> ParameterBinding(Out-File): name="InputObject"; value="W3SVC"
+>> ParameterBinding(Out-File): name="InputObject"; value="WAS"
+>> ParameterBinding(Out-File): name="InputObject"; value="WavesAudioService"
+>> ParameterBinding(Out-File): name="InputObject"; value="WavesSysSvc"
+>> ParameterBinding(Out-File): name="InputObject"; value="Wcmsvc"
+>> ParameterBinding(Out-File): name="InputObject"; value="WdiServiceHost"
+>> ParameterBinding(Out-File): name="InputObject"; value="WdiSystemHost"
+>> ParameterBinding(Out-File): name="InputObject"; value="WdNisSvc"
+>> ParameterBinding(Out-File): name="InputObject"; value="webthreatdefsvc"
+>> ParameterBinding(Out-File): name="InputObject"; value="webthreatdefusersvc_97dc9"
+>> ParameterBinding(Out-File): name="InputObject"; value="WinDefend"
+>> ParameterBinding(Out-File): name="InputObject"; value="WinHttpAutoProxySvc"
+>> ParameterBinding(Out-File): name="InputObject"; value="Winmgmt"
+>> ParameterBinding(Out-File): name="InputObject"; value="WlanSvc"
+>> ParameterBinding(Out-File): name="InputObject"; value="wlidsvc"
+>> ParameterBinding(Out-File): name="InputObject"; value="WMIRegistrationService"
+>> ParameterBinding(Out-File): name="InputObject"; value="Wms"
+>> ParameterBinding(Out-File): name="InputObject"; value="WmsRepair"
+>> ParameterBinding(Out-File): name="InputObject"; value="WpnService"
+>> ParameterBinding(Out-File): name="InputObject"; value="WpnUserService_97dc9"
+>> ParameterBinding(Out-File): name="InputObject"; value="wscsvc"
+>> ParameterBinding(Out-File): name="InputObject"; value="WSearch"
+>> ParameterBinding(Out-File): name="InputObject"; value="WSLService"
+>> ParameterBinding(Out-File): name="InputObject"; value="WwanSvc"
+RobDoeAi PS C:\(   .   Y   .   )ENGINE> TerminatingError(Get-Item): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: Cannot find path 'C:\NonExistentFile' because it does not exist."
+>> TerminatingError(Get-Item): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: Cannot find path 'C:\NonExistentFile' because it does not exist."
+>> TerminatingError(Get-Item): "The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: Cannot find path 'C:\NonExistentFile' because it does not exist."
+The running command stopped because the preference variable "ErrorActionPreference" or common parameter is set to Stop: Cannot find path 'C:\NonExistentFile' because it does not exist.
+Get-Item : Cannot find path 'C:\NonExistentFile' because it does not exist.
+At line:6 char:5
++     Get-Item "C:\NonExistentFile" -ErrorAction Stop
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\NonExistentFile:String) [Get-Item], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetItemCommand
+
+RobDoeAi PS C:\(   .   Y   .   )ENGINE> # Open the log file to prove the data is actually in there
+RobDoeAi PS C:\(   .   Y   .   )ENGINE> Get-Content -Path $LogPath
+Running Mesh Logic...
+
+Status   Name               DisplayName
+------   ----               -----------
+Running  AppHostSvc         Application Host Helper Service
+Running  Appinfo            Application Information
+Running  AudioEndpointBu... Windows Audio Endpoint Builder
+Running  Audiosrv           Windows Audio
+Running  BFE                Base Filtering Engine
+Running  BluetoothUserSe... Bluetooth User Support Service_97dc9
+Running  BrokerInfrastru... Background Tasks Infrastructure Ser...
+Running  BTAGService        Bluetooth Audio Gateway Service
+Running  BthAvctpSvc        AVCTP service
+Running  bthserv            Bluetooth Support Service
+Running  camsvc             Capability Access Manager Service
+Running  cbdhsvc_97dc9      Clipboard User Service_97dc9
+Running  CDPSvc             Connected Devices Platform Service
+Running  CDPUserSvc_97dc9   Connected Devices Platform User Ser...
+Running  CertPropSvc        Certificate Propagation
+Running  CoreMessagingRe... CoreMessaging
+Running  cplspcon           Intel(R) Content Protection HDCP Se...
+Running  CryptSvc           Cryptographic Services
+Running  DcomLaunch         DCOM Server Process Launcher
+Running  DeviceAssociati... Device Association Service
+Running  DevicesFlowUser... DevicesFlow_97dc9
+Running  DevQueryBroker     DevQuery Background Discovery Broker
+Running  Dhcp               DHCP Client
+Running  DiagTrack          Connected User Experiences and Tele...
+Running  DispBrokerDeskt... Display Policy Service
+Running  DisplayEnhancem... Display Enhancement Service
+Running  Dnscache           DNS Client
+Running  DoSvc              Delivery Optimization
+Running  DPS                Diagnostic Policy Service
+Running  DSDWirelessLEDC... DSDWirelessLEDCtlService
+Running  DsSvc              Data Sharing Service
+Running  DusmSvc            Data Usage
+Running  dynabookSetting... dynabookSettingService
+Running  esifsvc            Intel(R) Dynamic Tuning service
+Running  EventLog           Windows Event Log
+Running  EventSystem        COM+ Event System
+Running  fhsvc              File History Service
+Running  FirmwareSwitchS... FirmwareSwitchService
+Running  FontCache          Windows Font Cache Service
+Running  FontCache3.0.0.0   Windows Presentation Foundation Fon...
+Running  FrameServer        Windows Camera Frame Server
+Running  FrameServerMonitor Windows Camera Frame Server Monitor
+Running  GooglePlayGames... Google Play Games Services (26.5.50...
+Running  gpsvc              Group Policy Client
+Running  hidserv            Human Interface Device Service
+Running  hns                Host Network Service
+Running  HPPrintScanDoct... HP Print Scan Doctor Service
+Running  HvHost             HV Host Service
+Running  igfxCUIService2... Intel(R) HD Graphics Control Panel ...
+Running  InstallService     Microsoft Store Install Service
+Running  IntelAudioService  Intel(R) Audio Service
+Running  IntelGraphicsSo... Intel® Graphics Software
+Running  iphlpsvc           IP Helper
+Running  jhi_service        Intel(R) Dynamic Application Loader...
+Running  KeyIso             CNG Key Isolation
+Running  LanmanServer       Server
+Running  LanmanWorkstation  Workstation
+Running  lfsvc              Geolocation Service
+Running  LicenseManager     Windows License Manager Service
+Running  lmhosts            TCP/IP NetBIOS Helper
+Running  LSM                Local Session Manager
+Running  MDCoreSvc          Microsoft Defender Core Service
+Running  mpssvc             Windows Defender Firewall
+Running  NcbService         Network Connection Broker
+Running  Netman             Network Connections
+Running  netprofm           Network List Service
+Running  NPSMSvc_97dc9      NPSMSvc_97dc9
+Running  nsi                Network Store Interface Service
+Running  nvagent            Network Virtualization Service
+Running  OneSyncSvc_97dc9   Sync Host_97dc9
+Running  PcaSvc             Program Compatibility Assistant Ser...
+Running  PhoneSvc           Phone Service
+Running  PIEServiceNew      Intel® PROSet/Wireless Service
+Running  PimIndexMainten... Contact Data_97dc9
+Running  PlugPlay           Plug and Play
+Running  Power              Power
+Running  ProfSvc            User Profile Service
+Running  RasMan             Remote Access Connection Manager
+Running  RmSvc              Radio Management Service
+Running  RpcEptMapper       RPC Endpoint Mapper
+Running  RpcSs              Remote Procedure Call (RPC)
+Running  RtkAudioUnivers... Realtek Audio Universal Service
+Running  SamSs              Security Accounts Manager
+Running  SamsungQuickSha... Quick Share
+Running  Schedule           Task Scheduler
+Running  SecurityHealthS... Windows Security Service
+Running  SENS               System Event Notification Service
+Running  SessionEnv         Remote Desktop Configuration
+Running  SharedAccess       Internet Connection Sharing (ICS)
+Running  ShellHWDetection   Shell Hardware Detection
+Running  simptcp            Simple TCP/IP Services
+Running  SmsRouter          Microsoft Windows SMS Router Service.
+Running  Spooler            Print Spooler
+Running  SSDPSRV            SSDP Discovery
+Running  ssh-agent          OpenSSH Authentication Agent
+Running  SstpSvc            Secure Socket Tunneling Protocol Se...
+Running  StateRepository    State Repository Service
+Running  StiSvc             Windows Image Acquisition (WIA)
+Running  StorSvc            Storage Service
+Running  SysMain            SysMain
+Running  SystemEventsBroker System Events Broker
+Running  TbtP2pShortcutS... Thunderbolt(TM) Peer to Peer Shortcut
+Running  TermService        Remote Desktop Services
+Running  TextInputManage... Text Input Management Service
+Running  Themes             Themes
+Running  TimeBrokerSvc      Time Broker
+Running  TokenBroker        Web Account Manager
+Running  TrkWks             Distributed Link Tracking Client
+Running  UdkUserSvc_97dc9   Udk User Service_97dc9
+Running  UmRdpService       Remote Desktop Services UserMode Po...
+Running  UnistoreSvc_97dc9  User Data Storage_97dc9
+Running  UserDataSvc_97dc9  User Data Access_97dc9
+Running  UserManager        User Manager
+Running  UsoSvc             Update Orchestrator Service
+Running  VaultSvc           Credential Manager
+Running  vmcompute          Hyper-V Host Compute Service
+Running  vmms               Hyper-V Virtual Machine Management
+Running  W32Time            Windows Time
+Running  W3SVC              World Wide Web Publishing Service
+Running  WAS                Windows Process Activation Service
+Running  WavesAudioService  Waves Audio Universal Services
+Running  WavesSysSvc        Waves Audio Services
+Running  Wcmsvc             Windows Connection Manager
+Running  WdiServiceHost     Diagnostic Service Host
+Running  WdiSystemHost      Diagnostic System Host
+Running  WdNisSvc           Microsoft Defender Antivirus Networ...
+Running  webthreatdefsvc    Web Threat Defense Service
+Running  webthreatdefuse... Web Threat Defense User Service_97dc9
+Running  WinDefend          Microsoft Defender Antivirus Service
+Running  WinHttpAutoProx... WinHTTP Web Proxy Auto-Discovery Se...
+Running  Winmgmt            Windows Management Instrumentation
+Running  WlanSvc            WLAN AutoConfig
+Running  wlidsvc            Microsoft Account Sign-in Assistant
+Running  WMIRegistration... Intel(R) Management Engine WMI Prov...
+Running  Wms                MultiPoint Service
+Running  WmsRepair          MultiPoint Repair Service
+Running  WpnService         Windows Push Notifications System S...
+Running  WpnUserService_... Windows Push Notifications User Ser...
+Running  wscsvc             Security Center
+Running  WSearch            Windows Search
+Running  WSLService         WSL Service
+Running  WwanSvc            WWAN AutoConfig
+RobDoeAi PS C:\(   .   Y   .   )ENGINE> # Open the log file to prove the data is actually in there
+RobDoeAi PS C:\(   .   Y   .   )ENGINE> Get-Content -Path $LogPath
+Running Mesh Logic...
+
+Status   Name               DisplayName
+------   ----               -----------
+Running  AppHostSvc         Application Host Helper Service
+Running  Appinfo            Application Information
+Running  AudioEndpointBu... Windows Audio Endpoint Builder
+Running  Audiosrv           Windows Audio
+Running  BFE                Base Filtering Engine
+Running  BluetoothUserSe... Bluetooth User Support Service_97dc9
+Running  BrokerInfrastru... Background Tasks Infrastructure Ser...
+Running  BTAGService        Bluetooth Audio Gateway Service
+Running  BthAvctpSvc        AVCTP service
+Running  bthserv            Bluetooth Support Service
+Running  camsvc             Capability Access Manager Service
+Running  cbdhsvc_97dc9      Clipboard User Service_97dc9
+Running  CDPSvc             Connected Devices Platform Service
+Running  CDPUserSvc_97dc9   Connected Devices Platform User Ser...
+Running  CertPropSvc        Certificate Propagation
+Running  CoreMessagingRe... CoreMessaging
+Running  cplspcon           Intel(R) Content Protection HDCP Se...
+Running  CryptSvc           Cryptographic Services
+Running  DcomLaunch         DCOM Server Process Launcher
+Running  DeviceAssociati... Device Association Service
+Running  DevicesFlowUser... DevicesFlow_97dc9
+Running  DevQueryBroker     DevQuery Background Discovery Broker
+Running  Dhcp               DHCP Client
+Running  DiagTrack          Connected User Experiences and Tele...
+Running  DispBrokerDeskt... Display Policy Service
+Running  DisplayEnhancem... Display Enhancement Service
+Running  Dnscache           DNS Client
+Running  DoSvc              Delivery Optimization
+Running  DPS                Diagnostic Policy Service
+Running  DSDWirelessLEDC... DSDWirelessLEDCtlService
+Running  DsSvc              Data Sharing Service
+Running  DusmSvc            Data Usage
+Running  dynabookSetting... dynabookSettingService
+Running  esifsvc            Intel(R) Dynamic Tuning service
+Running  EventLog           Windows Event Log
+Running  EventSystem        COM+ Event System
+Running  fhsvc              File History Service
+Running  FirmwareSwitchS... FirmwareSwitchService
+Running  FontCache          Windows Font Cache Service
+Running  FontCache3.0.0.0   Windows Presentation Foundation Fon...
+Running  FrameServer        Windows Camera Frame Server
+Running  FrameServerMonitor Windows Camera Frame Server Monitor
+Running  GooglePlayGames... Google Play Games Services (26.5.50...
+Running  gpsvc              Group Policy Client
+Running  hidserv            Human Interface Device Service
+Running  hns                Host Network Service
+Running  HPPrintScanDoct... HP Print Scan Doctor Service
+Running  HvHost             HV Host Service
+Running  igfxCUIService2... Intel(R) HD Graphics Control Panel ...
+Running  InstallService     Microsoft Store Install Service
+Running  IntelAudioService  Intel(R) Audio Service
+Running  IntelGraphicsSo... Intel® Graphics Software
+Running  iphlpsvc           IP Helper
+Running  jhi_service        Intel(R) Dynamic Application Loader...
+Running  KeyIso             CNG Key Isolation
+Running  LanmanServer       Server
+Running  LanmanWorkstation  Workstation
+Running  lfsvc              Geolocation Service
+Running  LicenseManager     Windows License Manager Service
+Running  lmhosts            TCP/IP NetBIOS Helper
+Running  LSM                Local Session Manager
+Running  MDCoreSvc          Microsoft Defender Core Service
+Running  mpssvc             Windows Defender Firewall
+Running  NcbService         Network Connection Broker
+Running  Netman             Network Connections
+Running  netprofm           Network List Service
+Running  NPSMSvc_97dc9      NPSMSvc_97dc9
+Running  nsi                Network Store Interface Service
+Running  nvagent            Network Virtualization Service
+Running  OneSyncSvc_97dc9   Sync Host_97dc9
+Running  PcaSvc             Program Compatibility Assistant Ser...
+Running  PhoneSvc           Phone Service
+Running  PIEServiceNew      Intel® PROSet/Wireless Service
+Running  PimIndexMainten... Contact Data_97dc9
+Running  PlugPlay           Plug and Play
+Running  Power              Power
+Running  ProfSvc            User Profile Service
+Running  RasMan             Remote Access Connection Manager
+Running  RmSvc              Radio Management Service
+Running  RpcEptMapper       RPC Endpoint Mapper
+Running  RpcSs              Remote Procedure Call (RPC)
+Running  RtkAudioUnivers... Realtek Audio Universal Service
+Running  SamSs              Security Accounts Manager
+Running  SamsungQuickSha... Quick Share
+Running  Schedule           Task Scheduler
+Running  SecurityHealthS... Windows Security Service
+Running  SENS               System Event Notification Service
+Running  SessionEnv         Remote Desktop Configuration
+Running  SharedAccess       Internet Connection Sharing (ICS)
+Running  ShellHWDetection   Shell Hardware Detection
+Running  simptcp            Simple TCP/IP Services
+Running  SmsRouter          Microsoft Windows SMS Router Service.
+Running  Spooler            Print Spooler
+Running  SSDPSRV            SSDP Discovery
+Running  ssh-agent          OpenSSH Authentication Agent
+Running  SstpSvc            Secure Socket Tunneling Protocol Se...
+Running  StateRepository    State Repository Service
+Running  StiSvc             Windows Image Acquisition (WIA)
+Running  StorSvc            Storage Service
+Running  SysMain            SysMain
+Running  SystemEventsBroker System Events Broker
+Running  TbtP2pShortcutS... Thunderbolt(TM) Peer to Peer Shortcut
+Running  TermService        Remote Desktop Services
+Running  TextInputManage... Text Input Management Service
+Running  Themes             Themes
+Running  TimeBrokerSvc      Time Broker
+Running  TokenBroker        Web Account Manager
+Running  TrkWks             Distributed Link Tracking Client
+Running  UdkUserSvc_97dc9   Udk User Service_97dc9
+Running  UmRdpService       Remote Desktop Services UserMode Po...
+Running  UnistoreSvc_97dc9  User Data Storage_97dc9
+Running  UserDataSvc_97dc9  User Data Access_97dc9
+Running  UserManager        User Manager
+Running  UsoSvc             Update Orchestrator Service
+Running  VaultSvc           Credential Manager
+Running  vmcompute          Hyper-V Host Compute Service
+Running  vmms               Hyper-V Virtual Machine Management
+Running  W32Time            Windows Time
+Running  W3SVC              World Wide Web Publishing Service
+Running  WAS                Windows Process Activation Service
+Running  WavesAudioService  Waves Audio Universal Services
+Running  WavesSysSvc        Waves Audio Services
+Running  Wcmsvc             Windows Connection Manager
+Running  WdiServiceHost     Diagnostic Service Host
+Running  WdiSystemHost      Diagnostic System Host
+Running  WdNisSvc           Microsoft Defender Antivirus Networ...
+Running  webthreatdefsvc    Web Threat Defense Service
+Running  webthreatdefuse... Web Threat Defense User Service_97dc9
+Running  WinDefend          Microsoft Defender Antivirus Service
+Running  WinHttpAutoProx... WinHTTP Web Proxy Auto-Discovery Se...
+Running  Winmgmt            Windows Management Instrumentation
+Running  WlanSvc            WLAN AutoConfig
+Running  wlidsvc            Microsoft Account Sign-in Assistant
+Running  WMIRegistration... Intel(R) Management Engine WMI Prov...
+Running  Wms                MultiPoint Service
+Running  WmsRepair          MultiPoint Repair Service
+Running  WpnService         Windows Push Notifications System S...
+Running  WpnUserService_... Windows Push Notifications User Ser...
+Running  wscsvc             Security Center
+Running  WSearch            Windows Search
+Running  WSLService         WSL Service
+Running  WwanSvc            WWAN AutoConfig
+RobDoeAi PS C:\(   .   Y   .   )ENGINE> # Configuration
+RobDoeAi PS C:\(   .   Y   .   )ENGINE> $repoUrl = "https://github.com/AiAgency-Lab/T800-AiGC.git"
+RobDoeAi PS C:\(   .   Y   .   )ENGINE> $logDir = "C:\PowerShellLogs"
+RobDoeAi PS C:\(   .   Y   .   )ENGINE> # Navigate to the log directory
+RobDoeAi PS C:\(   .   Y   .   )ENGINE> Set-Location $logDir
+RobDoeAi PS C:\(   .   Y   .   )ENGINE> # Setup Git if not already initialized
+RobDoeAi PS C:\(   .   Y   .   )ENGINE> if (!(Test-Path .git)) {
+    Write-Host "Initializing Git repository..." -ForegroundColor Yellow
+    git init
+    git remote add origin $repoUrl
+    git branch -M main
+}
+Initializing Git repository...
+Initialized empty Git repository in C:/PowerShellLogs/.git/
+
+
+RobDoeAi PS C:\(   .   Y   .   )ENGINE> # Stage, Commit, and Push
+RobDoeAi PS C:\(   .   Y   .   )ENGINE> git add .
+
+RobDoeAi PS C:\(   .   Y   .   )ENGINE> git commit -m "Mesh log sync: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')"
