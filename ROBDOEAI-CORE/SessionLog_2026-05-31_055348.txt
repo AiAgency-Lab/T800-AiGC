@@ -520,3 +520,71 @@ RobDoeAi PS C:\(   .   Y   .   )ENGINE> # Stage, Commit, and Push
 RobDoeAi PS C:\(   .   Y   .   )ENGINE> git add .
 
 RobDoeAi PS C:\(   .   Y   .   )ENGINE> git commit -m "Mesh log sync: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')"
+[main (root-commit) 9fdd0c0] Mesh log sync: 2026-05-31 06:00:48
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 ROBDOEAI-CORE/SessionLog_2026-05-31_055348.txt
+ create mode 100644 ROBDOEAI-CORE_Audit.log
+RobDoeAi PS C:\(   .   Y   .   )ENGINE> git push -u origin main
+To https://github.com/AiAgency-Lab/T800-AiGC.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/AiAgency-Lab/T800-AiGC.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+RobDoeAi PS C:\(   .   Y   .   )ENGINE> git remote -v
+origin  https://github.com/AiAgency-Lab/T800-AiGC.git (fetch)
+origin  https://github.com/AiAgency-Lab/T800-AiGC.git (push)
+RobDoeAi PS C:\(   .   Y   .   )ENGINE> # Configuration
+RobDoeAi PS C:\(   .   Y   .   )ENGINE> $repoUrl = "https://github.com/AiAgency-Lab/T800-AiGC.git"
+RobDoeAi PS C:\(   .   Y   .   )ENGINE> $logDir = "C:\PowerShellLogs"
+RobDoeAi PS C:\(   .   Y   .   )ENGINE> # Navigate to the log directory
+RobDoeAi PS C:\(   .   Y   .   )ENGINE> Set-Location $logDir
+RobDoeAi PS C:\(   .   Y   .   )ENGINE> # Setup Git if not already initialized
+RobDoeAi PS C:\(   .   Y   .   )ENGINE> if (!(Test-Path .git)) {
+    Write-Host "Initializing Git repository..." -ForegroundColor Yellow
+    git init
+    git remote add origin $repoUrl
+    git branch -M main
+}
+RobDoeAi PS C:\(   .   Y   .   )ENGINE> # Stage, Commit, and Push
+RobDoeAi PS C:\(   .   Y   .   )ENGINE> git add .
+warning: in the working copy of 'ROBDOEAI-CORE/SessionLog_2026-05-31_055348.txt', LF will be replaced by CRLF the next time Git touches it
+RobDoeAi PS C:\(   .   Y   .   )ENGINE> git commit -m "Mesh log sync: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')"
+[main 322cd24] Mesh log sync: 2026-05-31 06:04:05
+ 1 file changed, 522 insertions(+)
+RobDoeAi PS C:\(   .   Y   .   )ENGINE> git push -u origin main
+To https://github.com/AiAgency-Lab/T800-AiGC.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/AiAgency-Lab/T800-AiGC.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+RobDoeAi PS C:\(   .   Y   .   )ENGINE> # Example of creating a scheduled task to run this push every hour
+RobDoeAi PS C:\(   .   Y   .   )ENGINE> $action = New-ScheduledTaskAction -Execute "powershell.exe" -Argument "-File C:\PathToYourScript\SyncLogs.ps1"
+RobDoeAi PS C:\(   .   Y   .   )ENGINE> $trigger = New-ScheduledTaskTrigger -Once -At 12:00PM -RepetitionInterval (New-TimeSpan -Hours 1)
+RobDoeAi PS C:\(   .   Y   .   )ENGINE> Register-ScheduledTask -Action $action -Trigger $trigger -TaskName "MeshLogSync" -Description "Sync T800-AiGC logs to remote"
+
+TaskPath                                       TaskName                          State
+--------                                       --------                          -----
+\                                              MeshLogSync                       Ready
+
+
+RobDoeAi PS C:\(   .   Y   .   )ENGINE> # 1. Bring in the changes from the remote without creating messy merge commits
+RobDoeAi PS C:\(   .   Y   .   )ENGINE> git pull --rebase origin main
+error: cannot pull with rebase: You have unstaged changes.
+error: Please commit or stash them.
+RobDoeAi PS C:\(   .   Y   .   )ENGINE> # 2. Push your logs to the repository
+RobDoeAi PS C:\(   .   Y   .   )ENGINE> git push -u origin main
+To https://github.com/AiAgency-Lab/T800-AiGC.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/AiAgency-Lab/T800-AiGC.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+RobDoeAi PS C:\(   .   Y   .   )ENGINE> # 1. Fetch and Rebase: Pulls remote changes and places your local commits on top
