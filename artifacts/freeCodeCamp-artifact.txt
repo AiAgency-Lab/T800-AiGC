@@ -1,0 +1,10 @@
+﻿[REPO::freeCodeCamp]
+timestamp: 2026-05-27T17:36:29+10:00
+
+url: https://github.com/freeCodeCamp/freeCodeCamp.git
+path: C:\~E14\freeCodeCamp
+status: exists
+shallow: True
+
+[holographic-exposure]
+mesh-hash: 

@@ -1,0 +1,10 @@
+﻿[REPO::awesome]
+timestamp: 2026-05-27T17:36:29+10:00
+
+url: https://github.com/sindresorhus/awesome.git
+path: C:\~E14\awesome
+status: exists
+shallow: False
+
+[holographic-exposure]
+mesh-hash: 

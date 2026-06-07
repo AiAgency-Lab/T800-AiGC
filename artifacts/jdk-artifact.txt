@@ -1,0 +1,10 @@
+﻿[REPO::jdk]
+timestamp: 2026-05-27T17:36:29+10:00
+
+url: https://github.com/openjdk/jdk.git
+path: C:\~E14\jdk
+status: exists
+shallow: True
+
+[holographic-exposure]
+mesh-hash: 

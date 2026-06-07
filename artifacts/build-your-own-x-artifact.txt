@@ -1,0 +1,10 @@
+﻿[REPO::build-your-own-x]
+timestamp: 2026-05-27T17:36:29+10:00
+
+url: https://github.com/danistefanovic/build-your-own-x.git
+path: C:\~E14\build-your-own-x
+status: exists
+shallow: False
+
+[holographic-exposure]
+mesh-hash: 
