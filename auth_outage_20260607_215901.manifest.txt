@@ -1,0 +1,68 @@
+﻿INCIDENT MANIFEST
+Name: auth_outage
+Severity: high
+Timestamp: 20260607_215901
+
+SYSTEM SNAPSHOT
+---------------
+
+Handles  NPM(K)    PM(K)      WS(K)     CPU(s)     Id  SI ProcessName                                                                                                                       
+-------  ------    -----      -----     ------     --  -- -----------                                                                                                                       
+   9127       0       52        160   6,905.19      4   0 System                                                                                                                            
+    430      46  1244004    1181244   3,406.67   2584   2 mscopilot                                                                                                                         
+    584      26   148920     156468   3,125.23  34920   2 Docker Desktop                                                                                                                    
+   1422     260   334536     246776   2,955.88   6700   0 MsMpEng                                                                                                                           
+    430      37   281356      29436   2,850.77  14760   2 msedge                                                                                                                            
+   4478     114   604508     257584   2,216.64   1552   2 dwm                                                                                                                               
+  19036     538   920900     481868   1,699.55  17680   2 explorer                                                                                                                          
+      1       1  3870760    1109824   1,468.39  22620   0 vmmemWSL                                                                                                                          
+   2818      30    15604      29436   1,140.64   1112   0 lsass                                                                                                                             
+   1639     125    94016     154064   1,076.59  11388   2 Taskmgr                                                                                                                           
+
+
+
+
+EVENT LOGS
+----------
+
+   Index Time          EntryType   Source                 InstanceID Message                                                                                                                
+   ----- ----          ---------   ------                 ---------- -------                                                                                                                
+   47123 Jun 07 21:36  Information Service Control M...   1073748864 The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start.     
+   47122 Jun 07 21:35  Information Service Control M...   1073748864 The start type of the Windows Modules Installer service was changed from auto start to demand start.                   
+   47121 Jun 07 21:35  Information Microsoft-Windows...           16 The description for Event ID '16' in Source 'Microsoft-Windows-Kernel-General' cannot be found.  The local computer ...
+   47120 Jun 07 21:35  Information Microsoft-Windows...           16 The description for Event ID '16' in Source 'Microsoft-Windows-Kernel-General' cannot be found.  The local computer ...
+   47119 Jun 07 21:32  Information Microsoft-Windows...           44 Windows Update started downloading an update.                                                                          
+   47118 Jun 07 21:32  Information Service Control M...   1073748864 The start type of the Windows Modules Installer service was changed from demand start to auto start.                   
+   47117 Jun 07 21:27  Information Microsoft-Windows...           16 The description for Event ID '16' in Source 'Microsoft-Windows-Kernel-General' cannot be found.  The local computer ...
+   47116 Jun 07 21:27  Information Microsoft-Windows...           16 The description for Event ID '16' in Source 'Microsoft-Windows-Kernel-General' cannot be found.  The local computer ...
+   47115 Jun 07 21:27  Information Microsoft-Windows...           16 The description for Event ID '16' in Source 'Microsoft-Windows-Kernel-General' cannot be found.  The local computer ...
+   47114 Jun 07 21:26  Information Service Control M...   1073748864 The start type of the Background Intelligent Transfer Service service was changed from demand start to auto start.     
+   47113 Jun 07 20:43  Information Microsoft-Windows...           19 Installation Successful: Windows successfully installed the following update: Security Intelligence Update for Micro...
+   47112 Jun 07 20:43  Information Microsoft-Windows...           43 Installation Started: Windows has started installing the following update: Security Intelligence Update for Microsof...
+   47111 Jun 07 20:43  Information Microsoft-Windows...           44 Windows Update started downloading an update.                                                                          
+   47110 Jun 07 20:39  Information Service Control M...   1073748864 The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start.     
+   47109 Jun 07 20:36  Information Service Control M...   1073748864 The start type of the Background Intelligent Transfer Service service was changed from demand start to auto start.     
+   47108 Jun 07 20:36  Warning     DCOM                        10016 The description for Event ID '10016' in Source 'DCOM' cannot be found.  The local computer may not have the necessar...
+   47107 Jun 07 20:30  Information Service Control M...   1073748864 The start type of the Background Intelligent Transfer Service service was changed from auto start to demand start.     
+   47106 Jun 07 20:29  Information Microsoft-Windows...           16 The description for Event ID '16' in Source 'Microsoft-Windows-Kernel-General' cannot be found.  The local computer ...
+   47105 Jun 07 20:28  Information Microsoft-Windows...           16 The description for Event ID '16' in Source 'Microsoft-Windows-Kernel-General' cannot be found.  The local computer ...
+   47104 Jun 07 20:27  Information Microsoft-Windows...           12 Process C:\Windows\System32\WUDFHost.exe (process ID:4172) reset policy scheme from {381b4222-f694-41f0-9685-ff5bb26...
+
+
+
+
+NETWORK
+-------
+Connectivity: True
+DNS: 
+Name                                           Type   TTL   Section    IPAddress                                
+----                                           ----   ---   -------    ---------                                
+google.com                                     AAAA   282   Answer     2404:6800:4006:801::200e                 
+google.com                                     A      31    Answer     142.251.222.238                          
+
+
+
+
+NOTES
+-----
+- Add operator notes here

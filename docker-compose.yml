@@ -1,0 +1,41 @@
+version: "3.9"
+
+services:
+  mqtt_broker:
+    image: eclipse-mosquitto:latest
+    container_name: mqtt_broker
+    restart: unless-stopped
+    ports:
+      - "1883:1883"
+      - "9001:9001"
+    volumes:
+      - ./config/mosquitto.conf:/mosquitto/config/mosquitto.conf:ro
+      - ./logs/mosquitto:/mosquitto/log
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "100m"
+        max-file: "3"
+
+  esp32_bridge:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: esp32_bridge
+    command: ["python3", "esp32_bridge.py"]
+    restart: unless-stopped
+    depends_on:
+      - mqtt_broker
+    env_file: ./config/.env.lock
+    environment:
+      - MQTT_BROKER=mqtt_broker
+      - MQTT_PORT=1883
+      - MQTT_TOPIC=esp32/sensors/#
+      - XYO_ENDPOINT=http://localhost:8004/seal
+    volumes:
+      - ./logs:/app/logs
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "100m"
+        max-file: "3"
