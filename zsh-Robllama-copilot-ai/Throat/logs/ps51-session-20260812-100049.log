@@ -1,0 +1,463 @@
+[11:19:08] CMD: ollama --version
+
+[12:39:25] CMD: ollama pull llama3.1
+[13:14:04] CMD: cd C:\SACREL
+[13:14:16] CMD: ls
+[13:15:34] CMD: cs C:\Sacral
+[13:16:40] CMD: cd C:\Sacral
+[13:36:45] CMD: $body = @{
+    model  = "llama3"
+    prompt = "Hello from PowerShell 5.1"
+} | ConvertTo-Json
+
+Invoke-RestMethod -Uri "http://localhost:11434/api/generate" -Method Post -Body $body
+
+[13:39:43] CMD: function Invoke-Phi3 {
+    param([string]$Prompt)
+
+    $body = @{
+        model  = "phi3"
+        prompt = $Prompt
+    } | ConvertTo-Json
+
+    Invoke-RestMethod -Uri "http://localhost:11434/api/generate" -Method Post -Body $body
+}
+
+Invoke-Phi3 "Root# online."
+
+[13:47:49] CMD: $root = "C:\chakaras#"
+
+$folders = @(
+    "root",
+    "sacral",
+    "solar",
+    "heart",
+    "throat",
+    "third_eye",
+    "crown"
+)
+
+foreach ($f in $folders) {
+    New-Item -ItemType Directory -Force -Path "$root\$f" | Out-Null
+}
+
+[13:48:20] CMD: ollama pull llama3
+ollama pull phi3
+
+[15:06:42] CMD: # 1. Target up to 912 distinct directories recursively to form the lattice nodes
+$maxNodes = 912
+Write-Host "[*] Scanning repository layout for up to $maxNodes lattice paths..." -ForegroundColor Cyan
+
+$latticeNodes = Get-ChildItem -Recurse -Directory | 
+                Where-Object { $_.FullName -notmatch '\\\.git' } | 
+                Select-Object -First $maxNodes
+
+$nodeCount = ($latticeNodes | Measure-Object).Count
+Write-Host "[+] Discovered $nodeCount structural nodes for the Merkle lattice." -ForegroundColor Green
+
+$branchNames = @()
+git checkout main 2>$null
+
+# 2. Construct individual orphan branch slices for every node in the lattice
+$counter = 1
+foreach ($node in $latticeNodes) {
+    # Create safe relative branch names
+    $relativePath = $node.FullName.Substring((Get-Location).Path.Length + 1)
+    $safeName = $relativePath -replace '[\\/]', '-' -replace '[^\w\-]', ''
+    $bName = "lattice/node-$counter-$safeName"
+    
+    if ($bName.Length -gt 200) { 
+        $bName = "lattice/node-$counter" # Prevent path overflow on deeply nested trees
+    }
+    
+    $branchNames += $bName
+    $tagName = "tag-node-$counter"
+
+    Write-Progress -Activity "Forging Merkle Lattice Tree" -Status "Processing node $counter of $nodeCount ($relativePath)" -PercentComplete (($counter / $nodeCount) * 100)
+
+    # Isolate state via orphan branch architecture
+    git checkout --orphan $bName 2>$null
+    git rm -rf . --quiet 2>$null
+    
+    if (Test-Path $relativePath) {
+        git checkout HEAD -- $relativePath --quiet 2>$null
+        git add . 2>$null
+        git commit -m "Merkle lattice leaf node $counter: $relativePath" --quiet 2>$null
+        git tag $tagName 2>$null
+    }
+    
+    $counter++
+}
+
+Write-Host "`n[*] Forging 912-parent Merkle Lattice Convergence Root..." -ForegroundColor Cyan
+
+# 3. Build the Master Lattice Convergence 
+# Git natively supports multi-parent commits via low-level plumbing (commit-tree) 
+# when standard merge limits are exceeded by massive node counts.
+git checkout main --quiet
+
+# Group branch tips to build the definitive lattice root hash
+$parentArgs = foreach ($b in $branchNames) { 
+    $commitHash = git rev-parse $b 2>$null
+    if ($commitHash) { "-p"; $commitHash }
+}
+
+if ($parentArgs) {
+    $rootTree = git write-tree
+    $latticeRootHash = & git commit-tree $rootTree @parentArgs -m "912-Node Merkle Lattice Unified Root Hash"
+    git update-ref refs/heads/merkle-lattice-root $latticeRootHash
+    git tag "v1.0.0-912-node-merkle-lattice" $latticeRootHash
+    
+    Write-Host "[+] SUCCESS: 912-Node Merkle Lattice Tree Forged!" -ForegroundColor Green
+    Write-Host "[+] Master Lattice Root Hash: $latticeRootHash" -ForegroundColor Cyan
+    Write-Host "[+] Master Tag Applied: v1.0.0-912-node-merkle-lattice" -ForegroundColor Green
+} else {
+    Write-Warning "Lattice construction encountered an empty parent set. Check repository contents."
+}
+[15:09:43] CMD: # Aligning the 912-Node Merkle Lattice to the current directory path (C:\zsh-copilot)
+Set-Location "C:\zsh-copilot"
+
+$maxNodes = 912
+Write-Host "[*] Aligning Merkle Lattice scan to active workspace: C:\zsh-copilot..." -ForegroundColor Cyan
+
+$latticeNodes = Get-ChildItem -Recurse -Directory | 
+                Where-Object { $_.FullName -notmatch '\\\.git' } | 
+                Select-Object -First $maxNodes
+
+$nodeCount = ($latticeNodes | Measure-Object).Count
+Write-Host "[+] Aligned and discovered $nodeCount structural nodes for the lattice." -ForegroundColor Green
+
+$branchNames = @()
+git checkout main 2>$null
+
+$counter = 1
+foreach ($node in $latticeNodes) {
+    $relativePath = $node.FullName.Substring((Get-Location).Path.Length + 1)
+    $safeName = $relativePath -replace '[\\/]', '-' -replace '[^\w\-]', ''
+    $bName = "lattice/node-$counter-$safeName"
+    
+    if ($bName.Length -gt 200) { 
+        $bName = "lattice/node-$counter" 
+    }
+    
+    $branchNames += $bName
+    $tagName = "tag-node-$counter"
+
+    Write-Progress -Activity "Aligning & Forging Merkle Lattice Tree" -Status "Processing node $counter of $nodeCount" -PercentComplete (($counter / $nodeCount) * 100)
+
+    git checkout --orphan $bName 2>$null
+    git rm -rf . --quiet 2>$null
+    
+    if (Test-Path $relativePath) {
+        git checkout HEAD -- $relativePath --quiet 2>$null
+        git add . 2>$null
+        git commit -m "Merkle lattice leaf node $counter: $relativePath" --quiet 2>$null
+        git tag $tagName 2>$null
+    }
+    
+    $counter++
+}
+
+Write-Host "`n[*] Forging aligned multi-parent Merkle Lattice Root..." -ForegroundColor Cyan
+
+git checkout main --quiet
+$parentArgs = foreach ($b in $branchNames) { 
+    $commitHash = git rev-parse $b 2>$null
+    if ($commitHash) { "-p"; $commitHash }
+}
+
+if ($parentArgs) {
+    $rootTree = git write-tree
+    $latticeRootHash = & git commit-tree $rootTree @parentArgs -m "Aligned 912-Node Merkle Lattice Unified Root Hash"
+    git update-ref refs/heads/merkle-lattice-root $latticeRootHash
+    git tag "v1.0.0-aligned-merkle-lattice" $latticeRootHash
+    
+    Write-Host "[+] SUCCESS: Lattice Aligned and Forged in C:\zsh-copilot!" -ForegroundColor Green
+    Write-Host "[+] Aligned Lattice Root Hash: $latticeRootHash" -ForegroundColor Cyan
+} else {
+    Write-Warning "Alignment lattice construction encountered an empty parent set."
+}
+[15:10:09] CMD: Set-Location "C:\zsh-copilot"
+
+$maxNodes = 912
+Write-Host "[*] Aligning Merkle Lattice scan to active workspace: C:\zsh-copilot..." -ForegroundColor Cyan
+
+$latticeNodes = Get-ChildItem -Recurse -Directory | 
+                Where-Object { $_.FullName -notmatch '\\\.git' } | 
+                Select-Object -First $maxNodes
+
+$nodeCount = ($latticeNodes | Measure-Object).Count
+Write-Host "[+] Aligned and discovered $nodeCount structural nodes for the lattice." -ForegroundColor Green
+
+$branchNames = @()
+git checkout main 2>$null
+
+$counter = 1
+foreach ($node in $latticeNodes) {
+    $relativePath = $node.FullName.Substring((Get-Location).Path.Length + 1)
+    $safeName = $relativePath -replace '[\\/]', '-' -replace '[^\w\-]', ''
+    $bName = "lattice/node-$counter-$safeName"
+    
+    if ($bName.Length -gt 200) { 
+        $bName = "lattice/node-$counter" 
+    }
+    
+    $branchNames += $bName
+    $tagName = "tag-node-$counter"
+
+    Write-Progress -Activity "Aligning & Forging Merkle Lattice Tree" -Status "Processing node $counter of $nodeCount" -PercentComplete (($counter / $nodeCount) * 100)
+
+    git checkout --orphan $bName 2>$null
+    git rm -rf . --quiet 2>$null
+    
+    if (Test-Path $relativePath) {
+        git checkout HEAD -- $relativePath --quiet 2>$null
+        git add . 2>$null
+        # Fixed: Used ${counter} to avoid PowerShell drive-reference parser collision
+        git commit -m "Merkle lattice leaf node ${counter}: $relativePath" --quiet 2>$null
+        git tag $tagName 2>$null
+    }
+    
+    $counter++
+}
+
+Write-Host "`n[*] Forging aligned multi-parent Merkle Lattice Root..." -ForegroundColor Cyan
+
+git checkout main --quiet
+$parentArgs = foreach ($b in $branchNames) { 
+    $commitHash = git rev-parse $b 2>$null
+    if ($commitHash) { "-p"; $commitHash }
+}
+
+if ($parentArgs) {
+    $rootTree = git write-tree
+    $latticeRootHash = & git commit-tree $rootTree @parentArgs -m "Aligned 912-Node Merkle Lattice Unified Root Hash"
+    git update-ref refs/heads/merkle-lattice-root $latticeRootHash
+    git tag "v1.0.0-aligned-merkle-lattice" $latticeRootHash
+    
+    Write-Host "[+] SUCCESS: Lattice Aligned and Forged in C:\zsh-copilot!" -ForegroundColor Green
+    Write-Host "[+] Aligned Lattice Root Hash: $latticeRootHash" -ForegroundColor Cyan
+} else {
+    Write-Warning "Alignment lattice construction encountered an empty parent set."
+}
+[15:13:51] CMD: Set-Location "C:\zsh-copilot"
+
+$maxNodes = 912
+Write-Host "[*] Aligning Merkle Lattice scan to active workspace: C:\zsh-copilot..." -ForegroundColor Cyan
+
+$latticeNodes = Get-ChildItem -Recurse -Directory | 
+                Where-Object { $_.FullName -notmatch '\\\.git' } | 
+                Select-Object -First $maxNodes
+
+$nodeCount = ($latticeNodes | Measure-Object).Count
+Write-Host "[+] Aligned and discovered $nodeCount structural nodes for the lattice." -ForegroundColor Green
+
+$branchNames = @()
+
+# Safely handle branch switching without throwing native command errors
+$currentBranch = (git branch --show-current).Trim()
+if ($currentBranch -ne "main") {
+    git checkout main --quiet
+}
+
+$counter = 1
+foreach ($node in $latticeNodes) {
+    $relativePath = $node.FullName.Substring((Get-Location).Path.Length + 1)
+    $safeName = $relativePath -replace '[\\/]', '-' -replace '[^\w\-]', ''
+    $bName = "lattice/node-$counter-$safeName"
+    
+    if ($bName.Length -gt 200) { 
+        $bName = "lattice/node-$counter" 
+    }
+    
+    $branchNames += $bName
+    $tagName = "tag-node-$counter"
+
+    Write-Progress -Activity "Aligning & Forging Merkle Lattice Tree" -Status "Processing node $counter of $nodeCount" -PercentComplete (($counter / $nodeCount) * 100)
+
+    git checkout --orphan $bName 2>&1 | Out-Null
+    git rm -rf . --quiet 2>&1 | Out-Null
+    
+    if (Test-Path $relativePath) {
+        git checkout HEAD -- $relativePath --quiet 2>&1 | Out-Null
+        git add . 2>&1 | Out-Null
+        git commit -m "Merkle lattice leaf node ${counter}: $relativePath" --quiet 2>&1 | Out-Null
+        git tag $tagName 2>&1 | Out-Null
+    }
+    
+    $counter++
+}
+
+Write-Host "`n[*] Forging aligned multi-parent Merkle Lattice Root..." -ForegroundColor Cyan
+
+git checkout main --quiet 2>&1 | Out-Null
+$parentArgs = foreach ($b in $branchNames) { 
+    $commitHash = git rev-parse $b 2>$null
+    if ($commitHash) { "-p"; $commitHash }
+}
+
+if ($parentArgs) {
+    $rootTree = git write-tree
+    $latticeRootHash = & git commit-tree $rootTree @parentArgs -m "Aligned 912-Node Merkle Lattice Unified Root Hash"
+    git update-ref refs/heads/merkle-lattice-root $latticeRootHash
+    git tag "v1.0.0-aligned-merkle-lattice" $latticeRootHash
+    
+    Write-Host "[+] SUCCESS: Lattice Aligned and Forged in C:\zsh-copilot!" -ForegroundColor Green
+    Write-Host "[+] Aligned Lattice Root Hash: $latticeRootHash" -ForegroundColor Cyan
+} else {
+    Write-Warning "Alignment lattice construction encountered an empty parent set."
+}
+[15:27:24] CMD: Set-Location "C:\zsh-copilot"
+
+$maxNodes = 34
+Write-Host "[*] Initializing Ollama Timepiece Escapement (34-Rubby Lattice Gear Train)..." -ForegroundColor Cyan
+
+$latticeNodes = Get-ChildItem -Recurse -Directory | 
+                Where-Object { $_.FullName -notmatch '\\\.git' } | 
+                Select-Object -First $maxNodes
+
+$nodeCount = ($latticeNodes | Measure-Object).Count
+Write-Host "[+] Escapement aligned with $nodeCount structural pivot rubbies." -ForegroundColor Green
+
+$branchNames = @()
+$currentBranch = (git branch --show-current).Trim()
+if ($currentBranch -ne "main") {
+    git checkout main -q 2>$null
+}
+
+$counter = 1
+foreach ($node in $latticeNodes) {
+    $relativePath = $node.FullName.Substring((Get-Location).Path.Length + 1)
+    $safeName = $relativePath -replace '[\\/]', '-' -replace '[^\w\-]', ''
+    $bName = "rubby/gear-$counter-$safeName"
+    
+    if ($bName.Length -gt 200) { 
+        $bName = "rubby/gear-$counter" 
+    }
+    
+    $branchNames += $bName
+    $tagName = "rubby-jewel-${counter}"
+
+    # Timepiece rotational indexing status
+    Write-Progress -Activity "Calibrating Timepiece Gear Train" -Status "Polishing Rubby Pivot $counter of $nodeCount" -PercentComplete (($counter / $nodeCount) * 100)
+
+    git checkout --orphan $bName -q 2>$null
+    git rm -rf . -q 2>$null
+    
+    if (Test-Path $relativePath) {
+        git checkout HEAD -- $relativePath -q 2>$null
+        git add . -q 2>$null
+        
+        # Consult local Ollama engine for rotational state synchronization
+        $ollamaPrompt = "Analyze structural gear alignment for gemstone pivot ${counter}: $relativePath. Output a single-line precision harmonic code."
+        $ollamaSignature = try { 
+            (Invoke-RestMethod -Uri "http://localhost:11434/api/generate" -Method Post -Body (@{ model = "llama3"; prompt = $ollamaPrompt; stream = $false } | ConvertTo-Json -Compress) -ContentType "application/json" -TimeoutSec 3).response.Trim() 
+        } catch { 
+            "Mechanical Jewel Lock [Gear-$counter]" 
+        }
+
+        git commit -m "Timepiece Rubby Jewel ${counter}: ${relativePath} | Harmonic: $ollamaSignature" -q 2>$null
+        git tag $tagName -q 2>$null
+    }
+    
+    $counter++
+}
+
+Write-Host "`n[*] Locking Central Escapement Wheel (Ollama Master Mainspring Integration)..." -ForegroundColor Cyan
+
+git checkout main -q 2>$null
+$parentArgs = foreach ($b in $branchNames) { 
+    $commitHash = git rev-parse $b 2>$null
+    if ($commitHash) { "-p"; $commitHash }
+}
+
+if ($parentArgs) {
+    $rootTree = git write-tree
+    $masterMainspringHash = & git commit-tree $rootTree @parentArgs -m "Ollama Timepiece Master Mainspring: 34-Rubby Synchronized Lattice Rotation"
+    git update-ref refs/heads/timepiece-escapement-root $masterMainspringHash
+    git tag "v1.0.0-timepiece-rubby-lattice" $masterMainspringHash
+    
+    Write-Host "[+] SUCCESS: Timepiece Fully Assembled and Wound in C:\zsh-copilot!" -ForegroundColor Green
+    Write-Host "[+] Master Mainspring Hash: $masterMainspringHash" -ForegroundColor Cyan
+} else {
+    Write-Warning "Timepiece escapement encountered an empty gear train."
+}
+[15:47:22] CMD: Set-Location "C:\zsh-copilot"
+
+# --- CELESTIAL POLARIS GEODESIC ORCHESTRATION ---
+# 1,296,000 arcseconds (Full 360-degree celestial circle in arcseconds)
+# Scaled to Gregorian/Polaris cyclic temporal frequency: 0.052 weeks per cycle coordinate
+$totalArcSec = 1296000
+$cyclianScaleFactor = 0.052
+$chakras = @("Root", "Sacral", "SolarPlexus", "Heart", "Throat", "ThirdEye", "Crown")
+$branchNames = @()
+
+$currentBranch = (git branch --show-current).Trim()
+if ($currentBranch -ne "main") {
+    git checkout main -q 2>$null
+}
+
+Write-Host "[*] Calibrating 1,296,000 Arc-Second Polaris Star-Cycle Geodesic Grid..." -ForegroundColor Cyan
+
+$gearCounter = 1
+foreach ($chakra in $chakras) {
+    $chakraPath = "C:\zsh-copilot\$chakra"
+    if (Test-Path $chakraPath) {
+        $subNodes = Get-ChildItem -Path $chakraPath -Directory
+        
+        foreach ($node in $subNodes) {
+            # Map node index to celestial arc-seconds and Gregorian/Polaris temporal vector
+            $arcSecOffset = $gearCounter * ($totalArcSec / 22) # Distributed across active nodes
+            $gregorianPolarisWeeks = $arcSecOffset * ($cyclianScaleFactor / 3600)
+
+            $relativePath = "$chakra\$($node.Name)"
+            $bName = "polaris/chakra-$chakra-$($node.Name)"
+            if ($bName.Length -gt 200) { $bName = "polaris/gear-$gearCounter" }
+            
+            $branchNames += $bName
+            $tagName = "polaris-arc-${gearCounter}"
+
+            Write-Progress -Activity "Orchestrating Polaris Timepiece" -Status "Locking Arc-Sec: $arcSecOffset | Cycle: ${gregorianPolarisWeeks}w [$chakra]" -PercentComplete (($gearCounter / 22) * 100)
+
+            git checkout --orphan $bName -q 2>$null
+            git rm -rf . -q 2>&1 | Out-Null
+            
+            if (Test-Path $node.FullName) {
+                Copy-Item -Path "$($node.FullName)\*" -Destination "." -Recurse -Force -ErrorAction SilentlyContinue
+                git add . -q 2>$null
+
+                # Query local Ollama engine for celestial-Gregorian frequency alignment
+                $ollamaPrompt = "Align chakra node $chakra/$($node.Name) at $arcSecOffset arcseconds ($gregorianPolarisWeeks weeks Gregorian Polaris cycle). Output harmonic vector."
+                $ollamaSignature = try { 
+                    (Invoke-RestMethod -Uri "http://localhost:11434/api/generate" -Method Post -Body (@{ model = "llama3"; prompt = $ollamaPrompt; stream = $false } | ConvertTo-Json -Compress) -ContentType "application/json" -TimeoutSec 2).response.Trim() 
+                } catch { 
+                    "Polaris-ArcSec-Lock [$arcSecOffset]" 
+                }
+
+                git commit -m "Polaris Geodesic Jewel ${gearCounter} [$chakra] $($node.Name) | ArcSec: $arcSecOffset | Cycle: ${gregorianPolarisWeeks}w | Harmonic: $ollamaSignature" -q 2>$null
+                git tag $tagName -q 2>$null
+            }
+            $gearCounter++
+        }
+    }
+}
+
+Write-Host "`n[*] Forging Master Polaris-Gregorian Lattice Root Convergence..." -ForegroundColor Cyan
+
+git checkout main -q 2>$null
+$parentArgs = foreach ($b in $branchNames) { 
+    $commitHash = git rev-parse $b 2>$null
+    if ($commitHash) { "-p"; $commitHash }
+}
+
+if ($parentArgs) {
+    $rootTree = git write-tree
+    $polarisRootHash = & git commit-tree $rootTree @parentArgs -m "Polaris-Gregorian 1,296,000 Arc-Sec Master Lattice Root: 0.052-Week Cyclic Gear Train"
+    git update-ref refs/heads/polaris-lattice-root $polarisRootHash
+    git tag "v1.0.0-polaris-gregorian-lattice" $polarisRootHash
+    
+    Write-Host "[+] SUCCESS: Polaris Star-Cycle Timepiece Fully Orchestrated!" -ForegroundColor Green
+    Write-Host "[+] Polaris Lattice Root Hash: $polarisRootHash" -ForegroundColor Cyan
+} else {
+    Write-Warning "Polaris orchestration encountered an empty parent matrix."
+}

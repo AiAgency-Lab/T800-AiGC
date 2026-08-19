@@ -1,0 +1,55 @@
+===========================
+  ZSH-COPILOT SOLARPLEXUS
+===========================
+
+This workspace contains 7 chakra blocks:
+
+1. Root
+2. Sacral
+3. SolarPlexus (zsh-copilot)
+4. Heart
+5. Throat
+6. ThirdEye
+7. Crown
+
+Each block contains linked project directories.
+
+===========================
+        CHAKRA MAP
+===========================
+
+ROOT (Red)
+- Monolith
+- Core-robdoe
+- Robdoerootauthority
+
+SACRAL (Orange)
+- openclaws-RobDoing
+- openfoodnetwork
+- esphelp
+
+SOLARPLEXUS (Yellow)
+- zshcopilot (self)
+- RD.ai
+- ErgometerRobDoe
+- CryptoLibRob
+
+HEART (Green)
+- AiAgency.101
+- REGISTERY_AiAgency101_robdoe_global
+- regina
+
+THROAT (Blue)
+- E14-MESH
+- copilot-worktrees
+- RobclawD
+
+THIRD EYE (Indigo)
+- kuramoto
+- Lattice_Alpha_Visible
+- Lattice_Omega_System
+
+CROWN (Violet)
+- SPACE
+- spaceRobDswarm
+- Tron-grid

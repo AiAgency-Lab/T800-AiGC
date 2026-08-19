@@ -1,0 +1,8 @@
+﻿{"Timestamp":"2026-08-16T21:23:23.453Z","MarkovState":"DRIFT","MerkleRoot":"9692d8a5fe5c5c81c3c804f212d08142749d2db3d86e7a05e9e6169aa95a7911"}
+{"Timestamp":"2026-08-16T21:23:23.683Z","MarkovState":"RECYCLED","MerkleRoot":"027609674f4ebe9eba1d84332a58f32c8b2fa502b3422ddff63f6888cf9ad369"}
+{"Timestamp":"2026-08-16T21:23:23.924Z","MarkovState":"DRIFT","MerkleRoot":"e00fea8fe436caf85c01ccb3b86f459d590757f85d7f8dfb725440f53a5d1ae0"}
+{"Timestamp":"2026-08-16T21:23:24.170Z","MarkovState":"LOCKED","MerkleRoot":"ec535e756c4dead4ca6cde5091ae0ce04be79c57084943d0ef09b5ecc695cf9f"}
+{"Timestamp":"2026-08-16T21:23:24.391Z","MarkovState":"LOCKED","MerkleRoot":"1f2f37f8afc479dbe4968ceaefc23992a0a995ac79cf51b54941a03c0f1215e0"}
+{"Timestamp":"2026-08-16T21:23:24.623Z","MarkovState":"LOCKED","MerkleRoot":"cc8c636563dc3ce59f9083df1e6232831a985a1cb1222d279ad6dfa4f2df2fef"}
+{"Timestamp":"2026-08-16T21:23:24.840Z","MarkovState":"LOCKED","MerkleRoot":"dad1f521edc0a4d3faf4bdb64097a85719bc8db657dde497eadcd014d9cfa938"}
+{"Timestamp":"2026-08-16T21:23:25.160Z","MarkovState":"LOCKED","MerkleRoot":"c3c079420787c4477bfb2b124a9b758703a55d904200c516a8efa1a62aba45c8"}

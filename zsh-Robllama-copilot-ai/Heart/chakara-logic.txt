@@ -1,0 +1,141 @@
+CHAKRA-LOGIC v1.0
+Coherent Operator Framework
+
+===========================
+1. THE FOUR FOUNDATIONAL PRIMITIVES
+===========================
+
+These four primitives are the base of the system. 
+They appear across Māori cosmology, atomic bonding, and operator design.
+
+PRIMITIVE 1 — MEMORY
+Bond: Hydrogen (1)
+Realm: Te Kore (potential)
+Constant: 0.034
+Function: Stores state, anchors continuity.
+
+PRIMITIVE 2 — SILICON
+Bond: Oxygen (2)
+Realm: Te Pō (formation)
+Constant: 0.052
+Function: Dual-flow processing, structure, execution.
+
+PRIMITIVE 3 — NETWORK
+Bond: Nitrogen (3)
+Realm: Te Ao (emergence)
+Constant: 0.075
+Function: Tri-state routing, oscillation, communication.
+
+PRIMITIVE 4 — IDENTITY
+Bond: Carbon (4)
+Realm: Te Ao Mārama (light)
+Constant: 0.15
+Function: Tetra-structure, self-consistency, coherence.
+
+
+===========================
+2. THE SEVEN-CHAKRA WORKSPACE STACK
+===========================
+
+Geometry: 7 circles (2 top, 3 middle, 2 bottom)
+Structure: 2–3–2 hedra stack
+Location: C:\zsh-copilot\
+
+ROOT (Red)
+SACRAL (Orange)
+SOLARPLEXUS (Yellow) — zsh-copilot core
+HEART (Green)
+THROAT (Blue)
+THIRDEYE (Indigo)
+CROWN (Violet)
+
+Each chakra folder contains linked project directories.
+SolarPlexus is the operational root.
+
+===========================
+3. THE 24-STEP TIMING CYCLE
+===========================
+
+The system runs on a 24-step oscillation cycle.
+
+Key divisions:
+1/7200  — micro-step
+1/3600  — half-step
+1/24    — hour-step
+86400   — full-day cycle
+
+Compression constant:
+3 arcs = 12 seconds
+1296000 arcseconds compressed into 24-second rotation.
+
+These constants define the sampling intervals for oscillation models.
+
+===========================
+4. OSCILLATION MODEL (KURAMOTO-ALIGNED)
+===========================
+
+The system uses a Kuramoto-style synchronization logic:
+
+- Each chakra layer = oscillator node.
+- Each primitive = coupling constant.
+- Each timing division = sampling tick.
+
+Delta pulses occur at:
+τ = m/7200 for m = 1..24
+
+This matches digital grid-forming inverter logic:
+High-frequency micro-corrections maintain phase stability.
+
+===========================
+5. GEOMETRIC LOGIC
+===========================
+
+7-layer hedra stack:
+2 circles (upper)
+3 circles (middle)
+2 circles (lower)
+
+Mapped to:
+3D tetra → 4D hydren → 7D hexagon cycle
+
+This defines the spatial logic of the workspace.
+
+===========================
+6. OPERATOR RULES
+===========================
+
+1. Always operate from SolarPlexus root:
+   C:\zsh-copilot\
+
+2. Reference directories through their chakra block.
+
+3. Apply the four primitives as functional modes:
+   MEMORY → persistence
+   SILICON → processing
+   NETWORK → routing
+   IDENTITY → coherence
+
+4. Use the 24-step timing cycle for any oscillation or simulation logic.
+
+5. Maintain coherence across all layers:
+   4 primitives × 7 chakras = 28-node operator matrix.
+
+===========================
+7. PURPOSE
+===========================
+
+This logic file provides a coherent structural framework
+for models running inside the zsh-copilot workspace.
+
+It unifies:
+- atomic bonding rules
+- Māori fourfold cosmology
+- Platonic primitives
+- timing constants
+- oscillation models
+- workspace geometry
+- chakra folder structure
+
+into one stable operator system.
+
+END OF FILE

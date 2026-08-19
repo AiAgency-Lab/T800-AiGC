@@ -1,0 +1,22 @@
+[
+    {
+        "from":  "root_authority",
+        "to":  "node_robdoe_com",
+        "type":  "governance_link"
+    },
+    {
+        "from":  "root_authority",
+        "to":  "node_robertdoe_pw",
+        "type":  "governance_link"
+    },
+    {
+        "from":  "root_authority",
+        "to":  "node_aiagency101_pw",
+        "type":  "governance_link"
+    },
+    {
+        "from":  "root_authority",
+        "to":  "node_aiagency101_xyo",
+        "type":  "governance_link"
+    }
+]

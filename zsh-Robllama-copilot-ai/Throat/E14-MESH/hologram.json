@@ -1,0 +1,12 @@
+{
+  "sovereign": "robdoe.com",
+  "emitter": "machine_%AiAgency101%",
+  "projections": [
+    "identity",
+    "repos",
+    "web3",
+    "machine",
+    "domain"
+  ]
+}
+

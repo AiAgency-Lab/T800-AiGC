@@ -1,0 +1,29 @@
+{
+    "id":  "root_authority",
+    "type":  "governance",
+    "version":  "1.0.0",
+    "authority":  "E14",
+    "code_of_conduct":  {
+                            "pledge":  "Open, welcoming, harassment-free participation for all.",
+                            "standards":  [
+                                              "Inclusive language",
+                                              "Respect viewpoints",
+                                              "Accept criticism",
+                                              "Community-first focus",
+                                              "Empathy toward members"
+                                          ],
+                            "unacceptable_behavior":  [
+                                                          "Sexualized content",
+                                                          "Unwelcome advances",
+                                                          "Trolling/insults",
+                                                          "Personal/political attacks",
+                                                          "Harassment",
+                                                          "Doxxing",
+                                                          "Unprofessional conduct"
+                                                      ],
+                            "enforcement":  "Maintainers may remove, edit, reject, or ban.",
+                            "scope":  "Applies in project spaces and public representation."
+                        },
+    "state":  "ACTIVE",
+    "signature":  "E14-20260617020019"
+}
