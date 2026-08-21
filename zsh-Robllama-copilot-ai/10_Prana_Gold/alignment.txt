@@ -1,0 +1,3 @@
+﻿NODE: 10_Prana_Gold
+ALIGNMENT: Enabled
+SYNC_STATE: Verified

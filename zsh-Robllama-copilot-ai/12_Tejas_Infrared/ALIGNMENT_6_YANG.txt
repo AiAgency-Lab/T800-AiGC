@@ -1,0 +1,3 @@
+﻿DIAGONAL PAIR 6
+YANG (PUSH): 12_Tejas_Infrared
+YIN  (PULL): 13_Ojas_Ultraviolet

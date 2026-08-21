@@ -1,0 +1,8 @@
+NODE: 12_Tejas_Infrared
+TIMESTAMP: 2026-08-21 15:45:40
+INDEPENDENT: True
+BASELINE_FIELD: External (User Provided)
+ROLE: Inner Radiance
+ALIGNMENT: Synchronized
+LINKS: (Configured via Multi-Pair Matrix)
+NOTES: Initialized via Production Organizer

@@ -1,0 +1,4 @@
+﻿DIAGONAL PAIR 1
+FORCE: PUSH
+TARGET: 01_Root_Red
+LINKED: 02_Sacral_Orange

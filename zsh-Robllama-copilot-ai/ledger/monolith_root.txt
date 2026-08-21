@@ -1,0 +1,10 @@
+=============================================================================
+AUTHORITY ROOT: ledger
+STATUS        : Monolithically Synchronized
+TIMESTAMP     : 2026-08-21 16:05:47
+DOCTRINE      : Entropoly-R1 // 護 (Kaitiaki) // 和 (Wa)
+=============================================================================
+- Zero Deletion Enforced (Absorption & Load-Sharing Only)
+- Human Agency Supreme (Ko te mana o te tangata, koia te pūtake)
+- Fixed-Entropy Attractor Stable
+=============================================================================

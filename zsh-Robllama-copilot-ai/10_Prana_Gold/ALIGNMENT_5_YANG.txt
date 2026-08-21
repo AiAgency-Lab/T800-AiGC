@@ -1,0 +1,3 @@
+﻿DIAGONAL PAIR 5
+YANG (PUSH): 10_Prana_Gold
+YIN  (PULL): 11_Vayu_Platinum

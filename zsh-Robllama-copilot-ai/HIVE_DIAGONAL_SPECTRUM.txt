@@ -1,0 +1,14 @@
+﻿01_Root_Red            | [X] .  .  .  .  .  .  .  .  .  .  .  .  .  | Line Layer: 1
+02_Sacral_Orange       |  . [X] .  .  .  .  .  .  .  .  .  .  .  .  | Line Layer: 2
+03_SolarPlex_Yellow    |  .  . [X] .  .  .  .  .  .  .  .  .  .  .  | Line Layer: 3
+04_Heart_Green         |  .  .  . [X] .  .  .  .  .  .  .  .  .  .  | Line Layer: 4
+05_Throat_Blue         |  .  .  .  . [X] .  .  .  .  .  .  .  .  .  | Line Layer: 5
+06_ThirdEye_Indigo     |  .  .  .  .  . [X] .  .  .  .  .  .  .  .  | Line Layer: 6
+07_Crown_Violet        |  .  .  .  .  .  . [X] .  .  .  .  .  .  .  | Line Layer: 7
+08_SoulStar_White      |  .  .  .  .  .  .  . [X] .  .  .  .  .  .  | Line Layer: 8
+09_Nadi_Silver         |  .  .  .  .  .  .  .  . [X] .  .  .  .  .  | Line Layer: 9
+10_Prana_Gold          |  .  .  .  .  .  .  .  .  . [X] .  .  .  .  | Line Layer: 10
+11_Vayu_Platinum       |  .  .  .  .  .  .  .  .  .  . [X] .  .  .  | Line Layer: 11
+12_Tejas_Infrared      |  .  .  .  .  .  .  .  .  .  .  . [X] .  .  | Line Layer: 12
+13_Ojas_Ultraviolet    |  .  .  .  .  .  .  .  .  .  .  .  . [X] .  | Line Layer: 13
+14_Sovereign_Diamond   |  .  .  .  .  .  .  .  .  .  .  .  .  . [X] | Line Layer: 14

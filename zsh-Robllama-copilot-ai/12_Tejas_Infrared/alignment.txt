@@ -1,0 +1,3 @@
+﻿NODE: 12_Tejas_Infrared
+ALIGNMENT: Enabled
+SYNC_STATE: Verified

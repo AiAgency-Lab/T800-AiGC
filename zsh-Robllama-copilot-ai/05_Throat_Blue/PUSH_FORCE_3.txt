@@ -1,0 +1,4 @@
+﻿DIAGONAL PAIR 3
+FORCE: PUSH
+TARGET: 05_Throat_Blue
+LINKED: 06_ThirdEye_Indigo

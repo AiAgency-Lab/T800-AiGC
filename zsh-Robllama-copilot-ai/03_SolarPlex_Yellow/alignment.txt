@@ -1,0 +1,3 @@
+﻿NODE: 03_SolarPlex_Yellow
+ALIGNMENT: Enabled
+SYNC_STATE: Verified

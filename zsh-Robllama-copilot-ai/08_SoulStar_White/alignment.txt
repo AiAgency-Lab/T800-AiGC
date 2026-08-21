@@ -1,0 +1,3 @@
+﻿NODE: 08_SoulStar_White
+ALIGNMENT: Enabled
+SYNC_STATE: Verified

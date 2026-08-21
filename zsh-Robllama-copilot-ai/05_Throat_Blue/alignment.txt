@@ -1,0 +1,3 @@
+﻿NODE: 05_Throat_Blue
+ALIGNMENT: Enabled
+SYNC_STATE: Verified

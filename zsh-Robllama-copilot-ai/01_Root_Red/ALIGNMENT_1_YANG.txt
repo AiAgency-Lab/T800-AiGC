@@ -1,0 +1,3 @@
+﻿DIAGONAL PAIR 1
+YANG (PUSH): 01_Root_Red
+YIN  (PULL): 02_Sacral_Orange

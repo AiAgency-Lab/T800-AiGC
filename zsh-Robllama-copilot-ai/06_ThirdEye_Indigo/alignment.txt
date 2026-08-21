@@ -1,0 +1,3 @@
+﻿NODE: 06_ThirdEye_Indigo
+ALIGNMENT: Enabled
+SYNC_STATE: Verified

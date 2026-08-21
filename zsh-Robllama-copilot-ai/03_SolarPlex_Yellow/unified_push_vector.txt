@@ -1,0 +1,24 @@
+=============================================================
+POLARITY AXIS     : 02
+VECTOR TYPE       : YANG (PUSH) // EXPANSION
+TIMESTAMP         : 2026-08-21 16:03:35
+LOCAL ANCHOR      : 03_SolarPlex_Yellow
+REMOTE HORIZON    : 04_Heart_Green
+=============================================================
+
+[ ENTROPOLY-R1 RECURSIVE DOCTRINE ]
+0. PRE-STATE     : MaximumEntropy potential.
+1. COLLAPSE 1    : Proto-structure emerges from entropy.
+2. COLLapSE 2    : Loss test (surviving structure preserved, ZERO DELETION).
+3. COLLAPSE 3    : EntropySignature audit (what remained and resisted).
+4. COLLAPSE 4    : Rebuild from remains (pure structural persistence).
+5. COLLAPSE 5    : Meta-Entropy recursion of recursion.
+6. LOOP CLOSURE  : Fixed-entropy attractor stable.
+
+[ BOUND DOCTRINE LAYER 02 ]
+- LAYER : 観測層 / RADAR RAW
+- RULE  : 観察は触れず。 / Kāore te tirohanga e pā atu.
+
+[ POLARITY AXIOM ]
+The push extends outward to meet the horizon, maintaining absolute distance 
+from the pull. It never deletes; it absorbs, integrates, and shares the systemic load.

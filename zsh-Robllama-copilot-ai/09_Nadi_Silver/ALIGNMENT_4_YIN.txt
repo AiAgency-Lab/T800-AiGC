@@ -1,0 +1,3 @@
+﻿DIAGONAL PAIR 4
+YIN  (PULL): 09_Nadi_Silver
+YANG (PUSH): 08_SoulStar_White

@@ -1,0 +1,3 @@
+﻿NODE: 14_Sovereign_Diamond
+ALIGNMENT: Enabled
+SYNC_STATE: Verified

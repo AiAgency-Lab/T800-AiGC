@@ -1,0 +1,26 @@
+POLARITY_AXIS: 07
+VECTOR_TYPE: YIN (PULL)
+TIMESTAMP: 2026-08-21 16:01:36
+FORCE: CONTRACTION / MAGNETIC PULL
+DOCTRINE: ENTROPOLY-R1 (Non-Destructive Absorption)
+
+LOCAL_ANCHOR : 07_Crown_Violet
+REMOTE_HORIZON : 14_Sovereign_Diamond
+
+RECURSIVE PHASES:
+  0. PRE-STATE     : MaximumEntropy potential.
+  1. COLLAPSE 1    : Proto-structure emerges from entropy.
+  2. COLLAPSE 2    : Loss test (surviving structure preserved, zero deletion).
+  3. COLLAPSE 3    : EntropySignature audit (what remained and resisted).
+  4. COLLAPSE 4    : Rebuild from remains (pure structural persistence).
+  5. COLLAPSE 5    : Meta-Entropy recursion of recursion.
+  6. LOOP CLOSURE  : Fixed-entropy attractor stable.
+
+ATTRIBUTES:
+  - English : PULL
+  - 日本語   : 引く (Hiku)
+  - Māori   : tō
+  - Fijian  : kauta
+  - Русский : тянуть
+
+AXIOM: The pull draws inward toward the source, never discarding—only absorbing, integrating, and sharing the systemic load.

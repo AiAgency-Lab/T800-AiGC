@@ -1,0 +1,4 @@
+﻿DIAGONAL PAIR 5
+FORCE: PUSH
+TARGET: 10_Prana_Gold
+LINKED: 11_Vayu_Platinum

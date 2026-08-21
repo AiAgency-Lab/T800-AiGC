@@ -1,0 +1,3 @@
+﻿DIAGONAL PAIR 5
+YANG: 10_Prana_Gold
+YIN: 11_Vayu_Platinum

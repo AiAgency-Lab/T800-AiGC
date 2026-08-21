@@ -1,0 +1,4 @@
+﻿DIAGONAL PAIR 2
+FORCE: PULL
+TARGET: 04_Heart_Green
+LINKED: 03_SolarPlex_Yellow

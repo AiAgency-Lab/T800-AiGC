@@ -1,0 +1,4 @@
+﻿DIAGONAL PAIR 7
+FORCE: PULL
+TARGET: 07_Crown_Violet
+LINKED: 14_Sovereign_Diamond

@@ -1,0 +1,24 @@
+=============================================================
+POLARITY AXIS     : 02
+VECTOR TYPE       : YIN (PULL) // CONTRACTION
+TIMESTAMP         : 2026-08-21 16:03:35
+LOCAL ANCHOR      : 04_Heart_Green
+REMOTE HORIZON    : 03_SolarPlex_Yellow
+=============================================================
+
+[ ENTROPOLY-R1 RECURSIVE DOCTRINE ]
+0. PRE-STATE     : MaximumEntropy potential.
+1. COLLAPSE 1    : Proto-structure emerges from entropy.
+2. COLLAPSE 2    : Loss test (surviving structure preserved, ZERO DELETION).
+3. COLLAPSE 3    : EntropySignature audit (what remained and resisted).
+4. COLLAPSE 4    : Rebuild from remains (pure structural persistence).
+5. COLLAPSE 5    : Meta-Entropy recursion of recursion.
+6. LOOP CLOSURE  : Fixed-entropy attractor stable.
+
+[ BOUND DOCTRINE LAYER 09 ]
+- LAYER : 危険度層 / RISK
+- RULE  : 判断は説明可能であること。 / He whakatau e taea te whakamārama.
+
+[ POLARITY AXIOM ]
+The pull draws inward toward the source, maintaining absolute distance 
+from the push. It never discards; it absorbs, integrates, and shares the systemic load.

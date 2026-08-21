@@ -1,0 +1,17 @@
+POLARITY_AXIS: 04
+VECTOR_TYPE: YIN (PULL)
+TIMESTAMP: 2026-08-21 15:48:14
+FORCE: CONTRACTION / MAGNETIC PULL
+STATUS: Integrated / Non-Destructive
+
+LOCAL_ANCHOR : 09_Nadi_Silver
+REMOTE_HORIZON : 08_SoulStar_White
+PROTOCOL: Absorption & Load-Sharing (Zero Deletions)
+ATTRIBUTES:
+  - English : PULL
+  - 日本語   : 引く (Hiku)
+  - Māori   : tō
+  - Fijian  : kauta
+  - Русский : тянуть
+
+AXIOM: The pull draws inward toward the source, never discarding what is gathered, but absorbing and integrating tension to share the systemic load.

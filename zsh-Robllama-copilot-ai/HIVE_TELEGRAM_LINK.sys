@@ -1,0 +1,8 @@
+﻿// ====================================================================
+// SOVEREIGN EXTERNAL TELEGRAM BROADCAST MATRIX
+// TARGET FEED: t.me/RDmoneyPOT
+// ====================================================================
+Channel_Target=RDmoneyPOT
+Resolution_Protocol=HTTPS_JSON
+Auto_Broadcast_Status=READY_TO_STREAM
+Merkle_Verification_Hook=56729a2128f1fbbf6c4f35e0dca5f6460f27169258ead4c72af845b1980c13c2

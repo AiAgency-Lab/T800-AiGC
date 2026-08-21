@@ -1,0 +1,3 @@
+﻿NODE: 01_Root_Red
+ALIGNMENT: Enabled
+SYNC_STATE: Verified

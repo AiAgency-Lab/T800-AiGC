@@ -1,0 +1,17 @@
+POLARITY_AXIS: 01
+VECTOR_TYPE: YANG (PUSH)
+TIMESTAMP: 2026-08-21 15:48:14
+FORCE: EXPANSION / RADIANT PUSH
+STATUS: Integrated / Non-Destructive
+
+LOCAL_ANCHOR : 01_Root_Red
+REMOTE_HORIZON : 02_Sacral_Orange
+PROTOCOL: Absorption & Load-Sharing (Zero Deletions)
+ATTRIBUTES:
+  - English : PUSH
+  - 日本語   : 押す (Osu)
+  - Māori   : pana
+  - Fijian  : toso
+  - Русский : толкать
+
+AXIOM: The push extends outward to meet the horizon, never destroying what it touches, but absorbing and integrating tension to share the systemic load.

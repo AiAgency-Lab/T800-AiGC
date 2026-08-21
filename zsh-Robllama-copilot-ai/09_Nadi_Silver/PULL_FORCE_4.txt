@@ -1,0 +1,4 @@
+﻿DIAGONAL PAIR 4
+FORCE: PULL
+TARGET: 09_Nadi_Silver
+LINKED: 08_SoulStar_White

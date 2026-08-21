@@ -1,0 +1,3 @@
+﻿DIAGONAL PAIR 3
+YANG (PUSH): 05_Throat_Blue
+YIN  (PULL): 06_ThirdEye_Indigo

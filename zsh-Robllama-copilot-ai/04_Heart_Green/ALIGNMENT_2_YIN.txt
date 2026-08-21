@@ -1,0 +1,3 @@
+﻿DIAGONAL PAIR 2
+YIN  (PULL): 04_Heart_Green
+YANG (PUSH): 03_SolarPlex_Yellow

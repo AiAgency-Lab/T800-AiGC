@@ -1,0 +1,4 @@
+﻿DIAGONAL PAIR 1
+FORCE: PULL
+TARGET: 02_Sacral_Orange
+LINKED: 01_Root_Red

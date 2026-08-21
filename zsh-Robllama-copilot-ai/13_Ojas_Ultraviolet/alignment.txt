@@ -1,0 +1,3 @@
+﻿NODE: 13_Ojas_Ultraviolet
+ALIGNMENT: Enabled
+SYNC_STATE: Verified

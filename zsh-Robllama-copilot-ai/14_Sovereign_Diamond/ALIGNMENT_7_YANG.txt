@@ -1,0 +1,3 @@
+﻿DIAGONAL PAIR 7
+YANG (PUSH): 14_Sovereign_Diamond
+YIN  (PULL): 07_Crown_Violet

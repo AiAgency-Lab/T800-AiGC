@@ -1,0 +1,3 @@
+﻿NODE: 09_Nadi_Silver
+ALIGNMENT: Enabled
+SYNC_STATE: Verified

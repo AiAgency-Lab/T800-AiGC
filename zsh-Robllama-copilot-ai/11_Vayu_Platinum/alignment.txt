@@ -1,0 +1,3 @@
+﻿NODE: 11_Vayu_Platinum
+ALIGNMENT: Enabled
+SYNC_STATE: Verified

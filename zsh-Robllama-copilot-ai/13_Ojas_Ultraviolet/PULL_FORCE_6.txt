@@ -1,0 +1,4 @@
+﻿DIAGONAL PAIR 6
+FORCE: PULL
+TARGET: 13_Ojas_Ultraviolet
+LINKED: 12_Tejas_Infrared
