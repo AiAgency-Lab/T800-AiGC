@@ -1,0 +1,67 @@
+version: '3.9'
+
+services:
+  project-reproducible:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      cache_from:
+        - type=gha
+    image: project-reproducible:latest
+    container_name: project-reproducible
+    hostname: project-reproducible
+    
+    # Preserve all project data with volume mounts
+    volumes:
+      - ./:/app:ro
+      - app-cache:/app/.cache
+      - app-logs:/app/logs
+    
+    # Environment for reproducibility
+    environment:
+      - PROJECT_HOME=/app
+      - PYTHON_UNBUFFERED=1
+      - PYTHONDONTWRITEBYTECODE=1
+      - TZ=UTC
+    
+    # Resource constraints for predictable behavior
+    deploy:
+      resources:
+        limits:
+          cpus: '2'
+          memory: 2G
+        reservations:
+          cpus: '1'
+          memory: 1G
+    
+    # Network settings
+    networks:
+      - project-network
+    
+    # Health check
+    healthcheck:
+      test: ["CMD", "test", "-f", "/app/merkle_tree.json"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+    
+    # Interactive shell
+    stdin_open: true
+    tty: true
+    
+    # Restart policy
+    restart: unless-stopped
+
+volumes:
+  app-cache:
+    driver: local
+  app-logs:
+    driver: local
+
+networks:
+  project-network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.28.0.0/16

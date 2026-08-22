@@ -1,0 +1,17 @@
+.git
+.gitignore
+.github
+README.md
+*.log
+.env
+.env.*
+node_modules
+__pycache__
+*.pyc
+.venv
+venv
+.DS_Store
+.idea
+.vscode
+*.tmp
+docker-compose.override.yml
